@@ -1,0 +1,44 @@
+.DS_Store
+
+# Raw editing/source project files (rushes, Premiere/DaVinci project caches) — never used on the site
+source-files/
+
+# --- Unused media in assets/ (not referenced by index.html / style.css / script.js) ---
+
+# Raw 4K ProRes footage (converted copies live in assets/videos/hero-sequence/)
+assets/videos/*.mov
+
+# Old/unused campaign video cuts
+assets/videos/campaign-1/
+assets/videos/campaign-2/
+assets/videos/campaign-4/
+assets/videos/campaign-branded.mp4
+assets/videos/hero.mp4
+assets/videos/hero-sequence/clip-1.mp4
+assets/videos/hero-sequence/clip-2.mp4
+
+# Unused logo variants and vector/print source files
+assets/img/brand/
+assets/img/logos/ai/
+assets/img/logos/eps/
+assets/img/logos/png/Merz_Belotero_Logo_gray_RGB.png
+assets/img/logos/png/Merz_Belotero_Logo_orange_RGB.png
+assets/img/logos/svg/Merz_Belotero_Logo_gray_RGB.svg
+
+# Unused model portrait/photoshoot exports (raw shoot, consent forms, PNG/TIFF duplicates)
+assets/img/model-imagery/alejandra/
+assets/img/model-imagery/brooke/
+assets/img/model-imagery/jonathan/
+assets/img/model-imagery/leslie/
+assets/img/model-imagery/group/Belotero Photography Group - PNG/
+assets/img/model-imagery/group/Original Selects (High Resolution)/
+assets/img/model-imagery/group/Belotero Photography Group - JPEG/Belotero_Group_03_719.jpg
+assets/img/model-imagery/group/Belotero Photography Group - JPEG/Belotero_Group_03_839.jpg
+assets/img/model-imagery/group/Belotero Photography Group - JPEG/Belotero_Group_03_913.jpg
+
+# Unused standalone model images
+assets/img/models/couple.jpg
+assets/img/models/duo-faces.jpg
+assets/img/models/face-map-landscape.jpg
+assets/img/models/portrait-alejandra.jpg
+assets/img/models/results-model.jpg
