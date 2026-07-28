@@ -1202,7 +1202,7 @@ main section[id],
   padding-top: 26px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-.footer-brand img { width: 180px; height: auto; display: block; }
+.footer-brand img { width: 180px; height: auto; display: block; filter: invert(1); }
 .footer-bottom p { margin: 0; color: rgba(255, 255, 255, 0.5); font-size: 12px; }
 .footer-ref { margin: 16px 0 0; color: rgba(255, 255, 255, 0.42); font-size: 11px; line-height: 1.5; }
 

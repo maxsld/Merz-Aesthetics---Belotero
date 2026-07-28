@@ -18,11 +18,11 @@ assets/videos/hero-sequence/clip-1.mp4
 assets/videos/hero-sequence/clip-2.mp4
 
 # Unused logo variants and vector/print source files
-assets/img/brand/
 assets/img/logos/ai/
 assets/img/logos/eps/
 assets/img/logos/png/Merz_Belotero_Logo_gray_RGB.png
 assets/img/logos/png/Merz_Belotero_Logo_orange_RGB.png
+assets/img/logos/png/Merz_Belotero_Logo_white_RGB.png
 assets/img/logos/svg/Merz_Belotero_Logo_gray_RGB.svg
 
 # Unused model portrait/photoshoot exports (raw shoot, consent forms, PNG/TIFF duplicates)
