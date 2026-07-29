@@ -138,6 +138,12 @@ main section[id],
 
 .site-brand {
   flex: 0 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.site-brand-mark {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -155,6 +161,17 @@ main section[id],
 }
 .site-header.is-scrolled .site-brand-logo-white { opacity: 0; }
 .site-header.is-scrolled .site-brand-logo-color { opacity: 1; }
+
+.site-brand-tagline {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 220ms ease;
+}
+.site-header.is-scrolled .site-brand-tagline { color: var(--orange); }
 
 .site-menu-toggle {
   display: none;
@@ -266,6 +283,7 @@ main section[id],
   color: var(--orange);
   font-size: 12px;
   font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 0;
 }
 .eyebrow::after {
@@ -294,9 +312,10 @@ main section[id],
   font-weight: 300;
   line-height: 1.05;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 .section-title span { color: var(--orange); }
-.section-title em { font-style: italic; color: var(--orange); text-transform: none; }
+.section-title em { font-style: italic; color: var(--orange); text-transform: uppercase; }
 
 .lead {
   margin: 18px auto 0;
@@ -372,10 +391,10 @@ main section[id],
 }
 .hero h1 .script-inline {
   display: block;
-  font-family: "Aeonik Pro", sans-serif;
+  font-family: "Playfair Display", "Aeonik Pro", serif;
   color: #fff;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   line-height: inherit;
   text-transform: none;
@@ -439,7 +458,7 @@ main section[id],
   font-size: clamp(28px, 3.2vw, 46px);
   font-weight: 300;
   line-height: 1.06;
-  text-transform: none;
+  text-transform: uppercase;
 }
 .intro-benefit-word {
   margin: 0 0 24px;
@@ -447,6 +466,7 @@ main section[id],
   font-size: clamp(18px, 1.7vw, 24px);
   font-weight: 400;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 .intro-copy p {
   margin: 0 0 24px;
@@ -484,7 +504,17 @@ main section[id],
   margin: 0;
   height: 100%;
 }
+.intro-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: translate(-20px, 20px);
+  background: linear-gradient(135deg, var(--orange-soft), var(--orange) 55%, var(--clay));
+}
 .intro-visual img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   min-height: 420px;
@@ -562,9 +592,23 @@ main section[id],
   align-self: start;
   margin: 0;
   aspect-ratio: 16 / 9;
+  overflow: visible;
+}
+.harmony-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: translate(-20px, 20px);
+  background: linear-gradient(135deg, var(--orange-soft), var(--orange) 55%, var(--clay));
+}
+.harmony-crop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   overflow: hidden;
 }
-.harmony-visual img {
+.harmony-crop img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -574,7 +618,7 @@ main section[id],
   display: block;
 }
 .harmony-copy { order: 2; }
-.harmony-copy h2 { text-transform: none; }
+.harmony-copy h2 { text-transform: uppercase; }
 .harmony-copy .harmony-sub {
   margin: 6px 0 22px;
   color: var(--orange);
@@ -762,6 +806,10 @@ main section[id],
   color: var(--orange);
 }
 .quote-block .eyebrow { margin-bottom: 18px; }
+.quote-heading {
+  margin: 0 0 22px;
+  max-width: 640px;
+}
 .quote-text {
   margin: 0;
   max-width: 640px;
@@ -781,13 +829,28 @@ main section[id],
 }
 
 .quote-photo {
+  position: relative;
   margin: 0;
   width: 100%;
   height: 100%;
+  overflow: visible;
+}
+.quote-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: translate(-20px, 20px);
+  background: linear-gradient(135deg, var(--orange-soft), var(--orange) 55%, var(--clay));
+}
+.quote-photo-crop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   overflow: hidden;
   background: var(--sand-2);
 }
-.quote-photo img {
+.quote-photo-crop img {
   width: 100%; height: 100%;
   display: block;
   object-fit: cover;
@@ -989,6 +1052,23 @@ main section[id],
   line-height: 1.5;
 }
 
+/* ===================== SECONDE CITATION (courte) ===================== */
+.quote-simple {
+  padding: clamp(48px, 6vw, 72px) 0;
+  background: var(--sand);
+  text-align: center;
+}
+.quote-simple-text {
+  margin: 0 auto;
+  max-width: 700px;
+  color: var(--ink);
+  font-family: "Aeonik Pro", sans-serif;
+  font-size: clamp(20px, 2.1vw, 28px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 /* ===================== STATS BAND ===================== */
 .stats {
   background: linear-gradient(100deg, var(--clay) 0%, var(--orange) 100%);
@@ -1173,6 +1253,7 @@ main section[id],
   color: rgba(255, 255, 255, 0.92);
   font-size: 18px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 .footer-references ol {
   margin: 0;
@@ -1276,7 +1357,8 @@ main section[id],
 }
 
 @media (max-width: 560px) {
-  .site-brand img { width: 148px; }
+  .site-brand-logo { width: 148px; }
+  .site-brand-tagline { font-size: 8px; letter-spacing: 0.16em; }
   .hero { min-height: 78vh; }
   .stats-inner { grid-template-columns: 1fr; gap: 22px; }
   .cta-search-row { grid-template-columns: 1fr; }
