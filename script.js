@@ -70,18 +70,10 @@ if (siteMenuLinks.length) {
   const timeEl = controls?.querySelector(".video-time");
   const toggleIcon = toggleBtn?.querySelector("i");
   const muteIcon = muteBtn?.querySelector("i");
-  const heroClips = [
-    {
-      src: "assets/videos/hero-sequence/clip-3.mp4",
-      type: "video/mp4",
-      endAt: 18
-    }
-  ];
-  let activeClip = 0;
 
   video.muted = true;
   video.defaultMuted = true;
-  video.loop = false;
+  video.loop = true;
 
   const fmt = (s) => {
     if (!Number.isFinite(s)) return "0:00";
@@ -102,19 +94,6 @@ if (siteMenuLinks.length) {
     muteIcon?.classList.toggle("fa-volume-high", !m);
   };
   const playCurrent = () => video.play().catch(() => {});
-  const loadClip = (index, autoplay = true) => {
-    activeClip = index % heroClips.length;
-    const clip = heroClips[activeClip];
-    if (video.currentSrc.endsWith(clip.src)) {
-      video.currentTime = 0;
-      if (autoplay) playCurrent();
-      return;
-    }
-    video.src = clip.src;
-    video.load();
-    if (autoplay) playCurrent();
-  };
-  const nextClip = (autoplay = true) => loadClip(activeClip + 1, autoplay);
 
   toggleBtn?.addEventListener("click", () => {
     if (video.paused) playCurrent();
@@ -124,14 +103,10 @@ if (siteMenuLinks.length) {
   video.addEventListener("play", syncPlay);
   video.addEventListener("pause", syncPlay);
   video.addEventListener("volumechange", syncMute);
-  video.addEventListener("ended", () => nextClip(true));
   video.addEventListener("timeupdate", () => {
-    const clip = heroClips[activeClip];
-    if (clip.endAt && video.currentTime >= clip.endAt) nextClip(!video.paused);
     if (timeEl) timeEl.textContent = fmt(video.currentTime);
   });
 
-  loadClip(0, false);
   const tryPlay = () => playCurrent();
   video.addEventListener("canplay", tryPlay);
   window.addEventListener("load", tryPlay, { once: true });

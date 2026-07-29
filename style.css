@@ -866,6 +866,7 @@ main section[id],
 .benefits-head { text-align: center; margin-bottom: clamp(30px, 4vw, 52px); }
 .benefits-head .script { margin-bottom: 18px; }
 .benefits-head .lead { }
+#benefits-title { font-size: clamp(24px, 2.5vw, 38px); }
 
 .benefits-grid {
   display: flex;
@@ -1050,23 +1051,6 @@ main section[id],
   color: var(--ink-faint);
   font-size: 12px;
   line-height: 1.5;
-}
-
-/* ===================== SECONDE CITATION (courte) ===================== */
-.quote-simple {
-  padding: clamp(48px, 6vw, 72px) 0;
-  background: var(--sand);
-  text-align: center;
-}
-.quote-simple-text {
-  margin: 0 auto;
-  max-width: 700px;
-  color: var(--ink);
-  font-family: "Aeonik Pro", sans-serif;
-  font-size: clamp(20px, 2.1vw, 28px);
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.4;
 }
 
 /* ===================== STATS BAND ===================== */
