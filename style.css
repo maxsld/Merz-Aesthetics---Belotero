@@ -507,9 +507,10 @@ main section[id],
 .intro-list li::before {
   content: "";
   flex: 0 0 auto;
-  width: 22px; height: 22px;
+  width: 7px; height: 7px;
+  margin: 0 7px;
   border-radius: 50%;
-  background: var(--orange-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M1 6l3.2 3.5L11 2.5' fill='none' stroke='%23EC7404' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 12px no-repeat;
+  background: var(--ink);
 }
 .intro-list li sup {
   top: 0;
@@ -590,6 +591,71 @@ main section[id],
 }
 .definition-card p.definition-text strong { color: var(--ink); font-weight: 400; }
 
+/* deux blocs repris de la page 4 de la brochure patient */
+.definition-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(30px, 4vw, 56px);
+  max-width: 980px;
+  margin: clamp(40px, 5vw, 64px) auto 0;
+  text-align: left;
+}
+.definition-block h3 {
+  margin: 0 0 16px;
+  color: var(--ink);
+  font-size: clamp(19px, 1.7vw, 24px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+.definition-block p {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 1.7;
+}
+.definition-block p:last-child { margin-bottom: 0; }
+.definition-block em { font-style: italic; }
+
+/* « Voir plus » sur la colonne acide hyaluronique (texte long) */
+.definition-more {
+  height: 0;
+  overflow: hidden;
+  transition: height 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.definition-more-inner { padding-top: 14px; }
+.definition-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--orange);
+  font: inherit;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.definition-toggle:hover .definition-toggle-label { text-decoration: underline; }
+.definition-toggle-icon {
+  position: relative;
+  width: 11px; height: 11px;
+  flex: 0 0 auto;
+}
+.definition-toggle-icon::before,
+.definition-toggle-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 0;
+  width: 11px; height: 1.5px;
+  background: currentColor;
+  transition: transform 300ms ease;
+}
+.definition-toggle-icon::after { transform: rotate(90deg); }
+.definition-toggle[aria-expanded="true"] .definition-toggle-icon::after { transform: rotate(0deg); }
+
 /* ===================== HARMONY (why it matters) ===================== */
 .harmony {
   padding: var(--section-y) 0;
@@ -632,7 +698,10 @@ main section[id],
   object-position: top;
   display: block;
 }
-.harmony-copy { order: 2; }
+.harmony-copy {
+  order: 2;
+  align-self: center; /* texte centre verticalement par rapport au visuel */
+}
 .harmony-copy .eyebrow {
   margin-bottom: 22px;
   font-size: clamp(13px, 1vw, 15px);
@@ -725,21 +794,16 @@ main section[id],
 .pin-right .pin-text { order: 3; }
 .pin-title {
   display: block;
+  text-wrap: balance;
   color: var(--ink);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: clamp(10.5px, 0.87vw, 12.5px);
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
 }
-.pin-desc {
-  display: block;
-  margin-top: 5px;
-  color: var(--ink-soft);
-  font-size: 12.5px;
-  line-height: 1.4;
-}
-.pin-desc strong { color: var(--ink); font-weight: 600; }
+.pin-title strong { font-weight: 700; }
+.pin-title sup { top: -0.45em; font-size: 0.7em; font-weight: 400; letter-spacing: 0; }
 .pin-right .pin-text { text-align: left; }
 
 .pin-line,
@@ -765,65 +829,77 @@ main section[id],
 .pin-left .pin-hline { flex: 0 0 44%; }
 .pin-right .pin-line,
 .pin-right .pin-hline { flex: 0 0 58%; }
-.pin-left .pin-line-medium { flex-basis: 34%; }
-.pin-right .pin-line-long { flex-basis: 62%; }
-.pin-left .pin-line-raffine { flex: 0 0 40%; }
-.pin-left .pin-line-hydrate { flex: 0 0 37%; }
-.pin-left .pin-line-lisse { flex: 0 0 51%; }
-.pin-right .pin-line-sculpte { flex: 0 0 46%; }
+/* Longueur de chaque trait : elle seule fixe l'abscisse du point.
+   Les traits restent strictement horizontaux. */
+.pin-left .pin-line-left-a   { flex: 0 0 40%; }  /* front                */
+.pin-left .pin-line-left-b   { flex: 0 0 34%; }  /* sous les yeux        */
+.pin-left .pin-line-left-c   { flex: 0 0 44%; }  /* sillons nasogéniens  */
+.pin-left .pin-line-left-d   { flex: 0 0 45%; }  /* autour de la bouche  */
+.pin-right .pin-line-right-a { flex: 0 0 56%; }  /* tempes et joues      */
+.pin-right .pin-line-right-b { flex: 0 0 55%; }  /* joues                */
+.pin-right .pin-line-right-c { flex: 0 0 65%; }  /* lèvres               */
+.pin-right .pin-line-right-d { flex: 0 0 68%; }  /* menton               */
 .pin-vline {
   display: none;
 }
-.pin-dot {
+.pin-dots {
   position: relative;
   top: 0.45em;
   flex: 0 0 auto;
-  width: 7px; height: 7px;
+  display: flex;
+  gap: 3px;
   margin: -3px 0 0 -1px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
-.pin-right .pin-dot { margin: -3px -1px 0 0; }
-.pin-dot::after {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  opacity: 0;
-  animation: pulse 2.6s ease-out infinite;
-}
-@keyframes pulse {
-  0% { opacity: 0.7; transform: scale(0.7); }
-  70% { opacity: 0; transform: scale(2.4); }
-  100% { opacity: 0; transform: scale(2.4); }
-}
-
-/* petite puce ronde réutilisée dans la liste mobile */
-.callout-dot {
+.pin-right .pin-dots { margin: -3px -1px 0 0; }
+.dot {
   display: inline-block;
   flex: 0 0 auto;
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--orange);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.55);
 }
+.dot-bal { background: #EC7404; }  /* BELOTERO Balance */
+.dot-int { background: #E6007E; }  /* BELOTERO Intense */
+.dot-sof { background: #F2CF00; }  /* BELOTERO Soft    */
+.dot-vol { background: #7D2E8D; }  /* BELOTERO Volume  */
+.dot-rev { background: #00A19A; }  /* BELOTERO Revive  */
+
+/* légende produits sous la photo */
+.areas-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 26px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.areas-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+
+
+/* petite puce ronde réutilisée dans la liste mobile */
 .callout-title {
   display: block;
   color: var(--ink);
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1.3;
 }
-.callout-desc {
-  display: block;
-  margin-top: 3px;
-  color: var(--ink-soft);
-  font-size: 15px;
-  line-height: 1.4;
-}
+.callout-title strong { font-weight: 700; }
+.callout-title sup { top: -0.45em; font-size: 0.7em; font-weight: 400; letter-spacing: 0; }
 
 /* ===================== BENEFITS ===================== */
 .benefits {
@@ -1228,14 +1304,17 @@ main section[id],
 }
 
 .cta-map {
+  position: sticky;      /* la carte suit la lecture de la liste de résultats */
+  top: 96px;
+  align-self: start;     /* sinon elle s'étire à la hauteur de la colonne texte */
+  height: clamp(460px, 62vh, 620px);
   min-height: 460px;
   overflow: hidden;
   border: 1px solid rgba(236, 116, 4, 0.24);
   background: var(--paper);
   box-shadow: 0 22px 54px rgba(42, 42, 42, 0.12);
 }
-.cta-map iframe { width: 100%; height: 100%; min-height: 460px; border: 0; display: block; }
-#locator-map { width: 100%; height: 100%; min-height: 460px; }
+#locator-map { width: 100%; height: 100%; }
 
 #locator-results {
   margin-top: 22px;
@@ -1262,7 +1341,8 @@ main section[id],
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .locator-item:hover { box-shadow: 0 6px 18px rgba(236, 116, 4, 0.16); border-color: rgba(236, 116, 4, 0.55); }
-.locator-item-title { margin: 0 0 6px; color: var(--ink); font-size: 15px; font-weight: 500; }
+.locator-item-title { margin: 0 0 4px; color: var(--ink); font-size: 15px; font-weight: 500; }
+.locator-item-sub { margin: 0 0 6px; color: var(--ink-faint); font-size: 13px; }
 .locator-item-address { margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.45; }
 .locator-item-distance { display: block; margin-top: 6px; color: var(--orange); font-size: 12px; font-weight: 500; }
 .locator-item-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
@@ -1276,7 +1356,8 @@ main section[id],
 }
 .locator-action-primary { border-color: var(--orange); background: var(--orange); color: #fff; }
 .locator-popup { min-width: 210px; font-family: "Aeonik Pro", sans-serif; }
-.locator-popup-title { margin: 0 0 6px; color: var(--ink); font-size: 14px; font-weight: 700; }
+.locator-popup-title { margin: 0 0 3px; color: var(--ink); font-size: 14px; font-weight: 700; }
+.locator-popup-sub { margin: 0 0 5px; color: var(--ink-faint); font-size: 12px; }
 .locator-popup-address { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.45; }
 
 /* ===================== REFERENCES ===================== */
@@ -1343,6 +1424,7 @@ main section[id],
 @media (max-width: 1120px) {
   .stats-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 20px; }
   .cta-grid { grid-template-columns: 1fr; }
+  .cta-map { position: static; height: 420px; min-height: 420px; }
   .references-inner ol { columns: 1; }
 }
 
@@ -1389,26 +1471,33 @@ main section[id],
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 
-/* callout layout on tablet: stack as a list below a shorter figure */
-@media (max-width: 860px) {
-  .areas-stage { max-width: 520px; }
-  .areas-figure { aspect-ratio: 4 / 3; }
+/* Les repères ont besoin de la pleine largeur de la figure : en dessous de
+   1100px les blocs de gauche se chevauchent, on bascule sur la liste. */
+/* En dessous de 1000px les repères se chevauchent : on bascule sur la liste. */
+@media (max-width: 1000px) {
+  .pin { display: none; }
   .areas-mobile-list {
     display: grid;
     gap: 12px;
     margin-top: 26px;
   }
-  .pin { display: none; }
   .area-card {
     display: flex; align-items: flex-start; gap: 14px;
     padding: 16px 18px;
     background: var(--paper);
     border: 1px solid var(--line);
   }
-  .area-card .callout-dot { margin-top: 5px; }
+  .area-card .pin-dots { top: 0; margin: 5px 0 0; }
 }
-@media (min-width: 861px) {
+@media (min-width: 1001px) {
   .areas-mobile-list { display: none; }
+}
+
+/* callout layout on tablet: shorter figure */
+@media (max-width: 860px) {
+  .definition-columns { grid-template-columns: 1fr; }
+  .areas-stage { max-width: 520px; }
+  .areas-figure { aspect-ratio: 4 / 3; }
 }
 
 @media (max-width: 560px) {
@@ -1432,7 +1521,6 @@ main section[id],
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { scroll-behavior: auto !important; }
   .pin { transition: none; }
-  .pin-dot::after { animation: none; }
+  * { scroll-behavior: auto !important; }
 }

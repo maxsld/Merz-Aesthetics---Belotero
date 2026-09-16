@@ -135,6 +135,26 @@ window.addEventListener("resize", () => {
   faqItems.forEach((item) => item.classList.contains("is-open") && setPanelHeight(item, true));
 });
 
+/* ---- « Voir plus » des blocs biomimétisme ---- */
+document.querySelectorAll(".definition-toggle").forEach((btn) => {
+  const panel = document.getElementById(btn.getAttribute("aria-controls"));
+  if (!panel) return;
+  const label = btn.querySelector(".definition-toggle-label");
+  const setHeight = (open) => {
+    const h = panel.firstElementChild.getBoundingClientRect().height;
+    panel.style.height = open ? `${Math.ceil(h)}px` : "0px";
+  };
+  btn.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") !== "true";
+    btn.setAttribute("aria-expanded", String(open));
+    if (label) label.textContent = open ? "Voir moins" : "Voir plus";
+    setHeight(open);
+  });
+  window.addEventListener("resize", () => {
+    if (btn.getAttribute("aria-expanded") === "true") setHeight(true);
+  });
+});
+
 /* ---- Pins zones : entrée animée au scroll ---- */
 if ("IntersectionObserver" in window) {
   const stage = document.querySelector(".areas-figure");
@@ -249,7 +269,7 @@ if ("IntersectionObserver" in window) {
   setPos(50);
 })();
 
-/* ---- Localisateur de praticiens BELOTERO® ---- */
+/* ---- Localisateur de centres BELOTERO® ---- */
 (() => {
   const input = document.getElementById("loc-search");
   const searchBtn = document.querySelector(".cta-search-btn");
@@ -257,36 +277,43 @@ if ("IntersectionObserver" in window) {
   const countEl = document.getElementById("locator-count");
   const listEl = document.getElementById("locator-list");
   const mapEl = document.getElementById("locator-map");
-  const mapFrame = document.querySelector(".cta-map-frame");
   if (!input || !searchBtn || !resultsBox || !mapEl || typeof L === "undefined") return;
 
   const MAX_RESULTS = 8;
   const RADIUS_KM = 60;
   const FALLBACK = 3;
 
-  // Praticiens (données de démonstration)
-  const CENTERS = [
-    { name: "Cabinet Esthétique Saint-Honoré", city: "Paris", zip: "75008", lat: 48.870477, lng: 2.310511, street: "Rue de Ponthieu", num: "12" },
-    { name: "Clinique Saint-Germain Esthétique", city: "Paris", zip: "75006", lat: 48.852399, lng: 2.339677, street: "Boulevard Saint-Germain", num: "126" },
-    { name: "Centre Dermatologique Opéra", city: "Paris", zip: "75009", lat: 48.8805, lng: 2.330073, street: "Square Moncey", num: "5" },
-    { name: "Cabinet Médical Monceau", city: "Paris", zip: "75017", lat: 48.882461, lng: 2.309578, street: "Place du Général Catroux", num: "7" },
-    { name: "Institut Esthétique Caudéran", city: "Bordeaux", zip: "33200", lat: 44.856182, lng: -0.615268, street: "Rue Falquet", num: "12" },
-    { name: "Cabinet Rodocanachi", city: "Marseille", zip: "13008", lat: 43.274374, lng: 5.385837, street: "Boulevard Rodocanachi", num: "55" },
-    { name: "Institut Esthétique Prado", city: "Marseille", zip: "13006", lat: 43.289532, lng: 5.374693, street: "Rue Roux de Brignoles", num: "13" },
-    { name: "Cabinet Quai Jean Moulin", city: "Lyon", zip: "69001", lat: 45.766576, lng: 4.837887, street: "Quai Jean Moulin", num: "9" },
-    { name: "Clinique Presqu'île Esthétique", city: "Lyon", zip: "69002", lat: 45.754, lng: 4.832, street: "Rue de la République", num: "48" },
-    { name: "Centre Médical Wilson", city: "Toulouse", zip: "31000", lat: 43.6045, lng: 1.4442, street: "Place du Président Wilson", num: "3" },
-    { name: "Cabinet Promenade", city: "Nice", zip: "06000", lat: 43.6959, lng: 7.2716, street: "Rue de France", num: "21" },
-    { name: "Centre Esthétique Graslin", city: "Nantes", zip: "44000", lat: 47.217029, lng: -1.563169, street: "Place Aristide Briand", num: "5" },
-    { name: "Cabinet Médical Antigone", city: "Montpellier", zip: "34000", lat: 43.600264, lng: 3.898424, street: "Rue de Syracuse", num: "82" },
-    { name: "Clinique Villa Ermitage", city: "Lambersart", zip: "59130", lat: 50.644465, lng: 3.031826, street: "Avenue Henri Delecaux", num: "8" },
-    { name: "Centre Dermatologique Neudorf", city: "Strasbourg", zip: "67100", lat: 48.5734, lng: 7.7521, street: "Route du Polygone", num: "104" },
-    { name: "Cabinet Entraigues", city: "Tours", zip: "37000", lat: 47.388074, lng: 0.688381, street: "Rue d'Entraigues", num: "19" },
-    { name: "Maison Elixience", city: "Metz", zip: "57000", lat: 49.107022, lng: 6.163254, street: "Rue Bossuet", num: "31" },
-    { name: "Dermatologie Esthétique Caen", city: "Caen", zip: "14000", lat: 49.179074, lng: -0.361873, street: "Place de l'Ancienne Comédie", num: "12" },
-    { name: "Centre Esthétique Thabor", city: "Rennes", zip: "35000", lat: 48.1147, lng: -1.6702, street: "Rue de Paris", num: "42" },
-    { name: "Clinique Del Mar", city: "Antibes", zip: "06160", lat: 43.558947, lng: 7.128187, street: "Boulevard Francis Meilland", num: "90" },
-  ];
+  /* Source des centres, par ordre de priorité :
+     1. window.BELOTERO_CENTERS      — liste injectée inline (petits jeux de données)
+     2. window.BELOTERO_CENTERS_URL  — API REST du plugin WordPress (cas nominatif)
+     3. data/belotero-centres.json   — fichier statique (site hors WordPress)
+     Le chargement n'a lieu qu'à la première recherche : la page reste légère. */
+  const CENTERS_URL = window.BELOTERO_CENTERS_URL || "data/belotero-centres.json";
+  let CENTERS = null;
+  let centersPromise = null;
+
+  const loadCenters = () => {
+    if (CENTERS) return Promise.resolve(CENTERS);
+    if (centersPromise) return centersPromise;
+    if (Array.isArray(window.BELOTERO_CENTERS)) {
+      CENTERS = normalize(window.BELOTERO_CENTERS);
+      return Promise.resolve(CENTERS);
+    }
+    centersPromise = fetch(CENTERS_URL, { headers: { Accept: "application/json" } })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+      .then((d) => { CENTERS = normalize(d); return CENTERS; })
+      .catch((err) => { centersPromise = null; throw err; });
+    return centersPromise;
+  };
+
+  const normalize = (list) => (Array.isArray(list) ? list : [])
+    .map((c) => ({
+      ...c,
+      streetNumber: c.streetNumber ?? c.num ?? "",
+      lat: Number(c.lat),
+      lng: Number(c.lng),
+    }))
+    .filter((c) => Number.isFinite(c.lat) && Number.isFinite(c.lng));
 
   const DEPT_COORDS = {
     "01":[46.2,5.2],"02":[49.5,3.4],"03":[46.3,3.4],"04":[44.1,6.2],"05":[44.7,6.4],"06":[43.9,7.2],"07":[44.7,4.7],"08":[49.7,4.7],"09":[42.9,1.6],"10":[48.3,4.1],
@@ -309,7 +336,8 @@ if ("IntersectionObserver" in window) {
   };
 
   let map = null;
-  let markers = [];
+  let markers = [];        // pins des résultats de recherche
+  let allLayer = null;     // pastilles de tous les centres
 
   const icon = () => L.divIcon({
     className: "",
@@ -319,18 +347,43 @@ if ("IntersectionObserver" in window) {
 
   const ensureMap = () => {
     if (map) return map;
-    if (mapFrame) mapFrame.hidden = true;
-    mapEl.hidden = false;
     map = L.map(mapEl, { zoomControl: true }).setView([46.8, 2.3], 6);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', maxZoom: 18,
     }).addTo(map);
     setTimeout(() => map.invalidateSize(), 60);
+    // Dès que la carte existe, on pose tous les centres : la carte n'est jamais vide.
+    loadCenters().then(plotAllCenters).catch(() => {});
     return map;
   };
 
+  /* Tous les centres, en pastilles légères (circleMarker, pas de DOM par point).
+     Les pins hauts sont réservés aux résultats d'une recherche. */
+  const plotAllCenters = (list) => {
+    if (!map || allLayer) return;
+    allLayer = L.layerGroup(
+      list.map((c) =>
+        L.circleMarker([c.lat, c.lng], {
+          radius: 4,
+          weight: 1,
+          color: "#fff",
+          fillColor: "#EC7404",
+          fillOpacity: 0.9,
+        }).bindPopup(popupHtml(c))
+      )
+    ).addTo(map);
+  };
+
+  const popupHtml = (c) =>
+    `<div class="locator-popup">` +
+      `<p class="locator-popup-title">${esc(c.name)}</p>` +
+      (c.name2 ? `<p class="locator-popup-sub">${esc(c.name2)}</p>` : "") +
+      `<p class="locator-popup-address">${esc(addr(c))}</p>` +
+      `<a class="locator-action locator-action-primary" href="${directions(c)}" target="_blank" rel="noopener"><i class="fa-solid fa-route"></i> Itinéraire</a>` +
+    `</div>`;
+
   const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  const addr = (c) => `${c.num} ${c.street}, ${c.zip} ${c.city}`;
+  const addr = (c) => [[c.streetNumber, c.street].filter(Boolean).join(" "), `${c.zip} ${c.city}`].filter(Boolean).join(", ");
   const directions = (c) => `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr(c) + ", France")}`;
 
   const haversine = (la1, ln1, la2, ln2) => {
@@ -348,10 +401,31 @@ if ("IntersectionObserver" in window) {
     const code = CITY_TO_DEPT[q.toLowerCase().trim()];
     return code && DEPT_COORDS[code] ? { lat: DEPT_COORDS[code][0], lng: DEPT_COORDS[code][1] } : null;
   };
-  const geocode = (q) =>
+  /* Résolution de la saisie utilisateur, du plus précis au plus tolérant :
+     1. API Adresse (data.gouv.fr) — précise au numéro, gratuite, sans clé
+     2. table départementale embarquée — hors-ligne, si l'API ne répond pas
+     3. Nominatim — pour une saisie hors France */
+  const geocodeBan = (q) => {
+    const zip = /^\d{5}$/.test(q);
+    const url = "https://api-adresse.data.gouv.fr/search/?limit=1&q=" + encodeURIComponent(q)
+      + (zip ? `&postcode=${q}&type=municipality` : "");
+    return fetch(url, { headers: { Accept: "application/json" } })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d) => {
+        const f = d?.features?.[0];
+        return f ? { lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] } : null;
+      });
+  };
+
+  const geocodeNominatim = (q) =>
     fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=fr,mc&q=${encodeURIComponent(q)}`, { headers: { Accept: "application/json" } })
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => (d?.length ? { lat: parseFloat(d[0].lat), lng: parseFloat(d[0].lon) } : null));
+
+  const resolveQuery = (q) =>
+    geocodeBan(q)
+      .catch(() => null)
+      .then((loc) => loc || zipCoords(q) || cityCoords(q) || geocodeNominatim(q).catch(() => null));
 
   const renderList = (items) => {
     listEl.innerHTML = "";
@@ -360,6 +434,7 @@ if ("IntersectionObserver" in window) {
       li.className = "locator-item";
       li.innerHTML =
         `<p class="locator-item-title">${esc(c.name)}</p>` +
+        (c.name2 ? `<p class="locator-item-sub">${esc(c.name2)}</p>` : "") +
         `<p class="locator-item-address">${esc(addr(c))}</p>` +
         `<span class="locator-item-distance">${Math.round(c.dist)} km</span>` +
         '<div class="locator-item-actions">' +
@@ -388,31 +463,42 @@ if ("IntersectionObserver" in window) {
     if (!nearest.length) { nearest = sorted.slice(0, FALLBACK); fallback = true; }
 
     markers = nearest.map((c) => {
-      const m = L.marker([c.lat, c.lng], { icon: icon() }).addTo(map);
+      const m = L.marker([c.lat, c.lng], { icon: icon(), zIndexOffset: 1000 }).addTo(map);
       m._c = c;
-      m.bindPopup(`<div class="locator-popup"><p class="locator-popup-title">${esc(c.name)}</p><p class="locator-popup-address">${esc(addr(c))}</p></div>`);
+      m.bindPopup(popupHtml(c));
       return m;
     });
     map.fitBounds(L.latLngBounds(nearest.map((c) => [c.lat, c.lng])), { padding: [40, 40], maxZoom: 12 });
     countEl.textContent = fallback
-      ? `Aucun praticien à moins de ${RADIUS_KM} km de « ${q} ». Voici les ${nearest.length} plus proches :`
-      : `${nearest.length} praticien${nearest.length > 1 ? "s" : ""} BELOTERO® près de « ${q} »`;
+      ? `Aucun centre à moins de ${RADIUS_KM} km de « ${q} ». Voici les ${nearest.length} plus proches :`
+      : `${nearest.length} centre${nearest.length > 1 ? "s" : ""} BELOTERO® près de « ${q} »`;
     renderList(nearest);
   };
 
   const doSearch = () => {
     const q = input.value.trim();
     if (!q) return;
-    const coords = zipCoords(q) || cityCoords(q);
-    if (coords) { showNearest(coords.lat, coords.lng, q); return; }
-    countEl.textContent = `Recherche autour de « ${q} »…`;
-    listEl.innerHTML = "";
+
     resultsBox.hidden = false;
-    geocode(q)
-      .then((loc) => loc ? showNearest(loc.lat, loc.lng, q) : (countEl.textContent = `Aucun praticien trouvé pour « ${q} ». Essayez un code postal.`))
-      .catch(() => { countEl.textContent = `Aucun praticien trouvé pour « ${q} ». Essayez un code postal.`; });
+    listEl.innerHTML = "";
+    countEl.textContent = `Recherche autour de « ${q} »…`;
+
+    loadCenters()
+      .then(() => resolveQuery(q))
+      .then((loc) => {
+        if (!loc) {
+          countEl.textContent = `Adresse introuvable pour « ${q} ». Essayez un code postal ou une ville.`;
+          return;
+        }
+        showNearest(loc.lat, loc.lng, q);
+      })
+      .catch(() => {
+        countEl.textContent = "La liste des centres n'a pas pu être chargée. Réessayez dans un instant.";
+      });
   };
 
   searchBtn.addEventListener("click", doSearch);
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") doSearch(); });
+
+  ensureMap();
 })();

@@ -1,0 +1,506 @@
+﻿name,name2,streetNumber,street,zip,city,region,country,lat,lng
+Selarl Dr Bergendahl Daniela,Maison Medicale Divonnes les Bains,255,Avenue des Thermes,01220,Divonnes les Bains,Ain,France,46.359445,6.137268
+Dr Boris Mirzoyan,Maison Medicale,110,Rue Germaine Tillion,01630,Saint Genis Pouilly,Ain,France,46.240790,6.033690
+Dr Marie Bertrand,,5,Route de Liesse,02820,Saint Erme Outre et Ramecourt,Aisne,France,49.529484,3.856513
+Dr Borovi Juli,L'Atelier Medical,7,Boulevard des Tilleuls,04100,Manosque,Alpes (Hte-Provence),France,43.835572,5.782070
+Clinique des Champs Elysées,Dr Sam Vidal,27,Rue Rossini,06000,Nice,Alpes-Maritimes,France,43.700237,7.262427
+Dr Assouline Uriel,,31,Rue Meyerbeer,06000,Nice,Alpes-Maritimes,France,43.697858,7.260197
+Dr Clave Micheline,,24,Avenue de Flirey,06000,Nice,Alpes-Maritimes,France,43.724242,7.275633
+Dr Fouque-Parachini Linda,,134,Avenue des Arenes de Cimiez,06000,Nice,Alpes-Maritimes,France,43.716305,7.274656
+Dr Miniconi Nigoghossian Marie J.,,1,Rue de Liberte,06000,Nice,Alpes-Maritimes,France,43.698556,7.268688
+Dr Palmaro Jean Claude,Cde Acces : 2011 - Rdc,6,Rue Clement Roassal,06000,Nice,Alpes-Maritimes,France,43.708562,7.261726
+Dr Volpei Charles,Villa Bella Vista,88,Boulevard de Cimiez,06000,Nice,Alpes-Maritimes,France,43.717295,7.272309
+Dr Ugolini Sandra,Sel,121,Boulevard Emmanuel Rouquier,06130,Grasse,Alpes-Maritimes,France,43.634684,6.939700
+Dr Lecornu Ludovic,Cabinet Medical,23,Rue des Etats-Unis,06150,Cannes,Alpes-Maritimes,France,43.555468,7.004585
+Dr Faltot Dominique Marie,Cabinet Medical 06.23.10.16.79,369,Avenue de Cannes,06210,Mandelieu-la-Napoule,Alpes-Maritimes,France,43.543167,6.936941
+Dr Coissard Veronique,,7,Rue Paul Doumer,06310,Beaulieu-sur-Mer,Alpes-Maritimes,France,43.705970,7.333604
+Dr Pusel Bertrand,Villa Bianca Dermatologie,832,Boulevard Pierre Sauvaigo,06480,La Colle sur Loup,Alpes-Maritimes,France,43.680332,7.118967
+Dr Vera Milene,,5,Place de la Vignasse,06560,Valbonne,Alpes-Maritimes,France,43.641892,7.006394
+Dr Weerts Jolanda,Vallis Bona D4,55,Place de Grasse,06560,Valbonne,Alpes-Maritimes,France,43.641353,7.006864
+Dr  Simon Lamquin,,5,Av Marechal de Lattre de Tassigny,06800,Cagnes sur Mer,Alpes-Maritimes,France,43.658278,7.163023
+Dr Levy Antoine,Cabinet Medical,4,Place de la Liberation,07000,Privas,Ardeche,France,44.734635,4.596719
+Dr Martin-Bourret Veronique,Leclos Republique,857,Avenue de la Republique,07500,Guilherand-Granges,Ardeche,France,44.936195,4.872153
+Dr Adnot Desanlis Lucie,,16,Rue Jean Baptiste Lefort,08000,Charleville Mezieres,Ardennes,France,49.739217,4.730012
+Dr Anne Laure Goeldel,,16,Rue Jean Baptiste Lefort,08000,Charleville Mezieres,Ardennes,France,49.739217,4.730012
+Dr Charneux Julie,,10,Rue Jean Baptiste Lefort,08000,Charleville Mezieres,Ardennes,France,49.740929,4.729592
+Dr Renard Frederic,,16,Rue Jean Baptiste Lefort,08000,Charleville-Mezieres,Ardennes,France,49.739217,4.730012
+Dr Benjamin Ngo,Au Cabinet Dr Hamati,39,Boulevard du 14 Juillet,10000,Troyes,Aube,France,48.293598,4.077321
+Dr Bica Delia,Clin. de Champagne-Sce Dermato,4,Rue Chaim Soutine,10000,Troyes,Aube,France,48.306169,4.052866
+Dr Ferdi Nathan,,17,Rue Raymond Poincare,10000,Troyes,Aube,France,48.296229,4.076485
+Dr Hubner Gabriel,Clinique de Champagne,4,Rue Chaim Soutine,10000,Troyes,Aube,France,48.306169,4.052866
+Dr  Severine Perez,Centre Hospitalier de Troyes,101,Avenue Anatole France,10003,Troyes,Aube,France,48.279897,4.068811
+Sas Prométhée Santé,Dr Dr Alexandre  Cavailles,5,Rue de Vigne,11570,Cazilhac,Aude,France,43.183136,2.353497
+Dr Marty Thibault,,25,Rue Mailhe,12200,Villefranche-de-Rouergue,Aveyron,France,44.352589,2.031945
+Centre Massilien de la Face - Romeu,Istria Brachet  Gage Thiery,24,Avenue du Prado,13006,Marseille,Bouches-du-Rhone,France,43.284196,5.384312
+Dr Amouyal Norbert,,24,Avenue du Prado,13006,Marseille,Bouches-du-Rhone,France,43.284196,5.384312
+Dr Abs Richard,,1,Boulevard Lord Duveen,13008,Marseille,Bouches-du-Rhone,France,43.276218,5.388683
+Dr Ayraud-Ollier Stephanie,,2,Boulevard Michelet,13008,Marseille,Bouches-du-Rhone,France,43.271859,5.391380
+Dr Bellot Samson Vanessa,,490,Rue Paradis,13008,Marseille,Bouches-du-Rhone,France,43.273319,5.385186
+Dr Korchia Daniel,,429,Rue Paradis,13008,Marseille,Bouches-du-Rhone,France,43.273983,5.385140
+Dr Lari Nicolas,Cabinet Medical,55BIS,Boulevard Rodocanachi,13008,Marseille,Bouches-du-Rhone,France,43.274653,5.387009
+Dr Malet Thierry,Centre Paradis Monticelli,433,Rue Paradis,13008,Marseille,Bouches-du-Rhone,France,43.273631,5.385361
+Dr Royer Emmanuelle,,8,Rue Farges,13008,Marseille,Bouches-du-Rhone,France,43.280912,5.385514
+Dr Weiller Merli Claude,Le Ribera E,376,Avenue du Prado,13008,Marseille,Bouches-du-Rhone,France,43.270150,5.387222
+Dr le Pillouer Anne,,255,Avenue du Prado,13008,Marseille,Bouches-du-Rhone,France,43.274374,5.390671
+Dr le Pillouer-Prost Anne,Le Grand Prado B,20 BIS,Allee Turcat Mery,13008,Marseille,Bouches-du-Rhone,France,43.280662,5.388153
+Selasu Korchia,,429,Rue Paradis,13008,Marseille,Bouches-du-Rhone,France,43.273983,5.385140
+Dr Romano-Arnal Marie Helene,,294,Avenue de la Capelette,13010,Marseille,Bouches-du-Rhone,France,43.280784,5.407904
+Dr Jaafari Nadia,,97,Av William Booth,13012,Marseille,Bouches-du-Rhone,France,43.296188,5.446719
+Selarl Dr la Grassa Sandrine,Cabinet Medical,245,Avenue de Montolivet,13012,Marseille,Bouches-du-Rhone,France,43.315175,5.414624
+Dermopolis,Dr Fourcade Roch Sabrina,15,Rue du Docteur Zamenhof,13016,Marseille,Bouches-du-Rhone,France,43.359158,5.322484
+Dr Vladau Laurenti George,,235,Allée Nicolas de Stael,13080,Aix en Provence,Bouches-du-Rhone,France,43.502510,5.437518
+Dr Navarro Catherine,,1890,Route Equilles,13090,Aix en Provence,Bouches-du-Rhone,France,43.539966,5.407771
+Selarl du Dr Vladau Georges,Cabinet Medical,25,Rue Pascal Fieschi,13090,Aix en Provence,Bouches-du-Rhone,France,43.509300,5.440054
+Dr Bereni Natacha,,9,Avenue Malacrida,13100,Aix en Provence,Bouches-du-Rhone,France,43.516999,5.466021
+Dr Caquant Ludovic,Hall A 2éme Étage,50,Rue du Docteur Fernand Aurientis,13100,Aix en Provence,Bouches-du-Rhone,France,43.530412,5.458113
+Dr Luneau Christine,,17,Avenue d'Indochine,13100,Aix en Provence,Bouches-du-Rhone,France,43.532556,5.439801
+Dr Dumont Nathalie,,26,Avenue Charles de Gaulle,13122,Ventabren,,France,43.542083,5.296265
+Calisix,Dr Widemann Vincent,80,Route de Chateaurenard,13190,Maillanne,Bouches-du-Rhone,France,43.329346,5.475794
+Dr Ginoux Emmanuelle,Cabinet Medical Bat 3 Rdc,7,Chemin du Mont Gibaou,13260,Cassis,Bouches-du-Rhone,France,43.236777,5.560163
+Dr Ginoux Emmanuelle,,13,Chemin du Mont Gibaou,13260,Cassis,Bouches-du-Rhone,France,43.236557,5.560897
+Dr Astrion Marine,,8,Impasse du Serre,13290,Les Milles,Bouches-du-Rhone,France,43.500925,5.386571
+Dr Jeanblanc Gerard,,415,Rue Claude Nicolas Ledoux,13290,Aix en Provence,Bouches-du-Rhone,France,43.481593,5.387003
+Dr Baroudi Oussama,Gemelia,365,Chemin Camp de Sarlier,13400,Aubagne,Bouches-du-Rhone,France,43.295149,5.587235
+Dr Durand Tiphanie,,1,Bd Victor Jauffret,13450,Grans,Bouches-du-Rhone,France,43.607591,5.063639
+Dr Tundidor Annie,,2,Rue Paul Baptistin Lombard,13500,Martigues,Bouches-du-Rhone,France,43.402030,5.055543
+Selarl Dr Herault-Bardin Fabienne,,1,Avenue Salvador Allende,13500,Martigues,Bouches-du-Rhone,France,43.408895,5.056442
+Dr Baude Anais,,15,"Avenue Mirabeau, Place Mandela",13530,Trets,Bouches-du-Rhone,France,43.447486,5.682588
+Dr Klein Doris,Cabinet Medical,350,Avenue Touloubre,13540,Puyricard,Bouches-du-Rhone,France,43.579400,5.420580
+Dr Martins Elsa,Cabinet Medical du Soleil,3725,Route du Puy Sainte Reparade,13540,Puyricard,Bouches-du-Rhone,France,43.589609,5.431906
+Dr Barberin Jean-Marc,Cabinet Medical,96,Avenue Camugli,13600,La Ciotat,Bouches-du-Rhone,France,43.182985,5.613561
+Dr Aiouaz Kamel,Clinique Marignane,,Avenue du General Raoul Salan,13700,Marignane,Bouches-du-Rhone,France,43.404358,5.216681
+Dr Suppin Gerard,L'Atrium,10,Boulevard Jean Marie l'Huillier,13800,Istres,Bouches-du-Rhone,France,43.512257,4.985024
+Dr Brajon Delphine,Bat F,390,Avenue des Moulins,13820,Ensues la Redonne,Bouches-du-Rhone,France,43.356893,5.196841
+Dr Berger Patricia,Cabinet Medical,25,Rue Saint Jean,14000,Caen,Calvados,France,49.182587,-0.359813
+Dr Labbe Daniel,,4,Place Fontette,14000,Caen,Calvados,France,49.181946,-0.371066
+Dr Marie Eric,,98,Boulevard Mal Lyautey,14000,Caen,Calvados,France,49.168398,-0.361400
+Dr Michel Sabine,,36,Avenue de l'Hippodrome,14000,Caen,Calvados,France,49.178608,-0.367802
+Dr Sheykhan Romuald,,36,Avenue  de l'Hippodrome,14000,Caen,Calvados,France,49.178608,-0.367802
+Dr Acher Aurelie,Ch Prive St Martin,18,Rue des Roquemonts,14050,Caen Cedex 4,Calvados,France,49.198099,-0.381343
+Dr Moreau Guillaume,,10,Rue Jane Addams,14280,Saint Contest,Calvados,France,49.207044,-0.390508
+Dr Morice-Notini Aurore,,10,Rue Janne Addams,14280,Saint Contest,Calvados,France,49.207044,-0.390508
+Mdb Synergia Strasman,,1,Rue du Bocage,14460,Colombelles,Calvados,France,49.191577,-0.303960
+Dr Sghaier Yassine,,1,Rue Marthe Gautier,14610,Epron,Calvados,France,49.221449,-0.360090
+Dr Stéphanie Harel Loree,,4,Rue Hubertine Auclert,14610,Epron,Calvados,France,49.221656,-0.366544
+Dr Auzerie Valerie,Clinique St Joseph-Serv Dermat,51,Avenue du President Wilson,16000,Angouleme,Charente,France,45.649705,0.147130
+Dr Dannepond Carole,Centre Clinical Elsan,2,Chemin de Fregeneuil,16800,Soyaux,Charente,France,45.637612,0.201631
+Dr Bonneric-Malthieu Felicia,Centre Dermatlantique,36 BIS,Rue Montcalm,17000,La Rochelle,Charente-Maritime,France,46.162296,-1.219375
+Dr Brouard Laure,Cabinet Medical,14,Avenue de Copenhague,17000,La Rochelle,Charente-Maritime,France,46.169707,-1.188338
+Dr Courrian Laurence,Cabinet Medical,1,Rue Marthe Pineau,17000,La Rochelle,Charente-Maritime,France,46.174623,-1.132663
+Dr Hind Laanait,,6,Rue Montcalm,17000,La Rochelle,Charente-Maritime,France,46.162362,-1.219066
+Dr Collin Erwan,Cabinet Medical,2,Allee de Bruxelles,17028,La Rochelle Cedex,Charente-Maritime,France,46.165305,-1.178665
+Dr Chekkoury Idrissi Hassan,Cabinet Medical,144,Rue de la Boule,17100,Saintes,Charente-Maritime,France,45.755927,-0.638924
+Dr Bertrand Bruno,Cabinet Orl Clinique Atlantique,26,Rue du Moulin des Justices,17138,Puilboreau,Charente-Maritime,France,46.173597,-1.126677
+Dr Doucet Sandrine,Cabinet Medical,3 BIS,Rue des Cerisiers,17200,Royan,Charente-Maritime,France,45.649035,-1.025776
+Selarl du Cabinet Dr Rabaud-Carrie,,3,Rue Claude Bernard,17200,Royan,Charente-Maritime,France,45.654042,-1.023669
+Dr Labrousse Sonia,,3,Avenue Maréchal Foch,19100,Brive-la-Gaillarde,Correze,France,45.161142,1.535124
+Dr Belcour Jacques,,2,Rue des Troubadours,19200,Ussel,Correze,France,45.548138,2.309677
+Dr Leschi Michel,,,Boulevard Louis Campi,20000,Ajaccio,Corse-du-Sud,France,41.919587,8.735272
+Dr Mounicq Francoise,Centre Laser Darcy,14,Boulevard de Sevigne,21000,Dijon,Cote-d'Or,France,47.322717,5.030702
+Dr Mounicq Françoise,Centre Laser Darcy,18,Rue Mariotte,21000,Dijon,Cote-d'Or,France,47.322129,5.031464
+Dr Brindejonc Diallo Laurence,,4,Rue Bizet,22000,Saint-Brieuc,Cotes-d'Armor,France,48.521051,-2.751816
+Dr Emilie Beck Robert,,1,Place 74eme Rit,22000,Saint Brieuc,Cotes-d'Armor,France,48.510378,-2.766857
+Selarl Dr Allafort Jérémy,,23,Boulevard Bertran de Born,24000,Perigueux,Dordogne,France,45.179553,0.717468
+Dr Devred Dominique,,13,Rue Arthur Bourdin,25300,Pontarlier,Doubs,France,46.902050,6.347304
+Aever Clinics France,,8,Rue Baudin,26000,Valence,Drome,France,44.933323,4.897278
+Dr Champin Julie,,317,Avenue Victor Hugo,26000,Valence,Drome,France,44.916727,4.885367
+Dr Delemps Christophe,,49,Avenue des Langories,26000,Valence,Drome,France,44.904374,4.905192
+Dr Guillermin Dominique,,125,Avenue Maurice Faure,26000,Valence,Drome,France,44.919809,4.884206
+Dr Mezzine Hicham Selarl,Cabinet Medical,8,Place de la République,26000,Valence,Drome,France,44.930306,4.890814
+Dr Lago Sarzier Sylvie,06 88 79 43 43,28,Avenue Emile Zola,26100,Romans-sur-Isere,Drome,France,45.050569,5.058343
+Dr Chandezon Jacques,,59,Route d'Allan,26200,Montelimar,Drome,France,44.538056,4.763610
+Dr Puechguiral Isabelle,Bat Occitan Entree B,,Avenue du 45eme Rt,26200,Montelimar,Drome,France,44.553424,4.745639
+Dr Fraissinet-Gernot Beatrice,Cabinet Medical,425,Rue Clement Ader le Long Buisso,27000,Evreux,Eure,France,49.014066,1.181384
+Dr Floch Nancy,Cabinet Medical,4,Rue Leureou - Zone de Kerlic,29000,Quimper,Finistere,France,48.013299,-4.071564
+Dr Grangier Yann,,2,Rue Pitre Chevalier,29000,Quimper,Finistere,France,47.971753,-4.090941
+Dr Scouarnnec Pauline,,4 BIS,Allée Urbain Couchouren,29000,Quimper,Finistere,France,47.994475,-4.099205
+Dr le Gall Marie Joseph,,32,Rue de Brest,29000,Quimper,Finistere,France,47.997466,-4.099859
+Dr Calvez Annie,,46,Rue Eric Tabarly,29300,Quimperle,Finistere,France,47.867462,-3.574740
+Dr Aufrere Dubourd Veronique,Cde Porte 45a61,1,Rue Vincent Faita,30000,Nimes,Gard,France,43.840456,4.365436
+Dr Renuy Francois,Cabinet Medical le Vivaldi,30,Avenue de Stalingrad,30100,Ales,Gard,France,44.124903,4.088677
+Dr Basseres Nathalie,Le Carré Medical,490,Rue Yves Sigal,30900,Nimes,Gard,France,43.814610,4.354460
+Dr Bihl Thierry Selarl,Le Meridien,480,Avenue Saint Andre de Codols,30900,Nimes,Gard,France,43.815677,4.356403
+Dr Bodnar Martial,,25,Rue Alsace Lorraine,31000,Toulouse,Garonne (Haute),France,43.602088,1.445577
+Dr Cambon Laurent,,41,Rue de la Balance,31000,Toulouse,Garonne (Haute),France,43.614100,1.440069
+Dr Clary Isabelle,Cabinet Medical,14,Rue Idrac,31000,Toulouse,Garonne (Haute),France,43.600936,1.453552
+Dr de la Chaussee Isabelle,Centre Laser Willson,7,Place du President Thomas  Wilson,31000,Toulouse,Garonne (Haute),France,43.604426,1.447007
+Dr Baron Nadine,,286,Avenue de l'Ardenne,31100,Toulouse,Garonne (Haute),France,43.583707,1.373197
+Dr Cyrus Robiolle,,116,Route d'Espagne,31100,Toulouse,Garonne (Haute),France,43.570874,1.424302
+Scm Cets,Dr Duly Robiolle Lafaye,116,Route d'Espagne,31100,Toulouse,Garonne (Haute),France,43.570874,1.424302
+Dr Szternberg Anaelle,Centre G&s,53,Route de Lavaur,31240,L'Union,Garonne (Haute),France,43.637525,1.498719
+Selarl Dr  Royer Albagnac Monique,Cabinet Medical,29,Chemin de la Violette,31240,L'Union,Garonne (Haute),France,43.663678,1.463113
+Dr Gassia Veronique,,23,Allee Charles de Fitte,31300,Toulouse,Garonne (Haute),France,43.595107,1.432544
+Dr Fabie Boulard Aurelie,,46,Route de Narbonne,31320,Auzeville-Tolosane,Garonne (Haute),France,43.529856,1.488842
+Dr Gueganton Corinne,,17,Route de Revel,31400,Toulouse,Garonne (Haute),France,43.577908,1.485432
+Dr Philippe Frey,,12,Av de l'Aerodrome de Montaudran,31400,Toulouse,Garonne (Haute),France,43.571340,1.481014
+Scm Saboye-Lavigne-Wagner,,54,Allee  des Demoiselles,31400,Toulouse,Garonne (Haute),France,43.588918,1.457173
+Dr Patricia Bourgeois,,25,Rue Charles Garnier,31500,Toulouse,Garonne (Haute),France,43.609294,1.479222
+Selarl Marie-Pierre Labarthe,,172,Avenue Jean Rieux,31500,Toulouse,Garonne (Haute),France,43.603133,1.472920
+Dr Campourcy Muriel,Scm Centre de Dermatologie,153,Avenue Jacques Douzans,31600,Muret,Garonne (Haute),France,43.467728,1.328107
+Scm Centre de Dermatologie,Dr Campourcy,153,Avenue Jacques Douzans,31600,Muret,,France,43.467728,1.328107
+Dr Yazbeck Rima,Eden Clinic Of Beauty,55,L'Occitane,31670,Labege,Garonne (Haute),France,43.550456,1.501185
+Dr Bravi Serge,Clinique des Cedres 1er et,,Chateau d'Alliez,31700,Cornebarrieu,Garonne (Haute),France,43.663007,1.344291
+Dr Combret-Kobuch Catherine,,4,Cheminement de la Sarriette,31700,Blagnac,Garonne (Haute),France,43.648944,1.371503
+Lumac,Dr Choquet Marie,6,Boulevard de l'Europe,31700,Beauzelle,Garonne (Haute),France,43.661278,1.368334
+Dr Azencot Armand,Clinique Ferrère,16TER,Rue Ferrere,33000,Bordeaux,Gironde,France,44.848063,-0.572164
+Dr Lavocat Emma,Anthèse,9,Rue du Colisée,33000,Bordeaux,Gironde,France,44.847196,-0.582179
+Dr Vezon Geraldine,Cabinet Medical,36,Rue Jean Renaud Dandicolle,33000,Bordeaux,Gironde,France,44.832768,-0.586152
+Dr Vincent Cante,,105,Rue Belleville,33000,Bordeaux,Gironde,France,44.833869,-0.585057
+Selarl Lc-Lc.ea,,23,Rue Edmond Michelet,33000,Bordeaux,Gironde,France,44.840177,-0.581538
+Dr Knaebel Virginie,Cabinet Medical,8,Rue  Bert,33110,Le Bouscat,Gironde,France,44.864328,-0.600334
+Dr Nzong Alain,Cabinet Medical - Bat C2 Appt 009,121,Avenue des Pyrénées,33140,Villenave-d'Ornon,Gironde,France,44.765936,-0.562652
+Selarl Docteur Couvet,,26,Rue Claude Bernard,33160,Saint Medard en Jalles,Gironde,France,44.876707,-0.696811
+Dr Baspeyras Martine,,45,Avenue Bel Air,33200,Bordeaux,Gironde,France,44.841194,-0.607995
+Dr Blaquiere Raphael,,59,Avenue Carnot,33200,Bordeaux,Gironde,France,44.852307,-0.598710
+Dr Cambefort-Bayle Armelle,Cabinet Medical,9,Rue de Sandillan,33200,Le Taillan Medoc,Gironde,France,44.905069,-0.671531
+Dr Falkenrodt Franck,,59,Avenue Carnot,33200,Bordeaux,Gironde,France,44.852307,-0.598710
+Dr Handiri-Gencel Latifa,,33,Avenue Raymond Poincare,33200,Bordeaux,Gironde,France,44.844663,-0.620263
+Dr Reau Anne Francois,Cabinet Bella Vitae,32,Avenue Charles de Gaulle,33200,Bordeaux,Gironde,France,44.848933,-0.599517
+Sas Cleo Medical,,12,Rue Falquet,33200,Bordeaux,Gironde,France,44.856183,-0.615268
+Dr Dicharry Pauline,,112,Avenue Charles de Gaulles,33260,La Teste de Buch,Gironde,France,44.637151,-1.127192
+Dr Merigou Gomez Delphine,3a Park Agora,47,Rue Lagrua,33260,La-Teste-de-Buch,Gironde,France,44.639069,-1.154405
+Dr Kouto Alexandre,Cabinet Medical,9,Avenue de l'Europe,33290,Blanquefort,Gironde,France,44.911297,-0.642830
+Selarl Calluaud Maxillo,,24,Rue des Cavailles,33310,Lormont,Gironde,France,44.864792,-0.521635
+Rejuvskin,Dr Darty Stephane,1,Za du Grand Chemin,33370,Yvrac,Gironde,France,44.869094,-0.466912
+Dr Héloïse Barailler,,341,Avenue de Verdun,33700,Merignac,Gironde,France,44.839372,-0.632510
+Selarl Durand-Bonis Betty,Cabinet Medical,54,Avenue de Certes,33980,Audenge,Gironde,France,44.690262,-1.020797
+Dr Galmiche Sophie - Chirur Max Fac,Hopital Gui de Chauliac 3 Étage,80,Rue Augustin Fliche,34000,Montpellier,Herault,France,43.610285,3.879948
+Dr Hind Benakki,Clinique de Beaute,310,Avenue Joan Miro,34000,Montpellier,Herault,France,43.600450,3.908523
+Dr Jammet Patrick,Cabinet Coem,335,Rue Louis Lepine,34000,Montpellier,Herault,France,43.612856,3.909075
+Selarl Guillaume Carles,,2,Rue des Etuves,34000,Montpellier,Herault,France,43.608143,3.878595
+Selarl Jnj Santé,Dr Nadal Jérémy,266,Place E. Granier - l'Arche Coeu,34000,Montpellier,Herault,France,43.601467,3.900492
+Selarl Benguigui,,115,Rue de la Haye,34080,Montpellier,Herault,France,43.629309,3.818639
+Sas Med Innov Pole Med- Ophta 34,Ophta 34,30,Rue Saint-Exupéry,34130,Mauguio,Herault,France,43.589854,3.935367
+Dr Granier Pascal,Centre Medical Castrimed,65,Avenue des Gardians,34160,Castries,Herault,France,43.670162,3.971743
+Dr  Alizee  Guyon Llanos,Pole Santé Thau Étage 5,310,Avenue du Maréchal Juin,34200,Sete,Herault,France,43.408220,3.704070
+Dr Coste Fattoum Nadia,Zac du Capiscol,8,Boulevard du Vesuve,34300,Agde,Herault,France,43.305806,3.496019
+Dr Avignon Simon Cmf,Clinique Causse - Pharmacie,3,Traverse de Beziers,34440,Colombiers,Herault,France,43.313579,3.145229
+Dr Corpelet Denis,Clinique Causse,3,"Traverse de Beziers, Rdc",34440,Colombiers,Herault,France,43.313579,3.145229
+Dr Melka Joel,Clinique Causse,3,Traverse de Beziers,34440,Colombiers,Herault,France,43.313579,3.145229
+Dr Mornet Olivier,Clinique du Dr Causse,3,Traverse de Beziers,34440,Colombiers,Herault,France,43.313579,3.145229
+Dr Florence Garrel,Mediflow,600,Avenue Marcel Pagnol,34470,Perols,Herault,France,43.561344,3.951484
+Dr Enjalbert Bruno,Esthétique Medical,31,Rue Pelisson,34500,Beziers,Herault,France,43.342322,3.216134
+Dr Gnanadicom Eric,,20,Place Jean Jaures,34500,Beziers,Herault,France,43.341785,3.216232
+Dr la Paquerie Pierre,Espace Domitia,54,Avenue Pierre Verdier,34500,Beziers,Herault,France,43.344971,3.236800
+Selarl Dr Prud'Homme Alexandre,,59TER,Avenue Camille Saint Saens,34500,Beziers,Herault,France,43.342499,3.221266
+Dr Benjamin Torregrossa,,8,Rue Louis Breguet,34830,Jacou,Herault,France,43.658603,3.902474
+Dr Fournier Nathalie,Selarl Centre Laser Dermatologique,,Avenue de l'Europe,34830,Clapiers,Herault,France,43.661240,3.900428
+Dr Granier Alain,Mel 610 P.a Clément Ader,8,Rue Louis Breguet,34830,Jacou,Herault,France,43.658603,3.902474
+Dr Rauzy Frances Anne,Dr Alain Granier,8,Rue Louis Bréguet,34830,Jacou,Herault,France,43.658603,3.902474
+Dr Saussaye Yannick,Domus Medica,4,Avenue Monteroni d'Arbia,34920,Le Cres,Herault,France,43.660251,3.937594
+Sarl Dr Camille Planet,,5,Avenue des Chasseurs,34920,Le Cres,Herault,France,43.660937,3.935560
+Selarl Dr Marie Albertini,,5,Avenue des Chasseurs,34920,Le Cres,Herault,France,43.660937,3.935560
+Dr Berramdani Leila,Forum Sante,,Avenue du Pic St Loup,34980,Saint-Gely-du-Fesc,Herault,France,43.692169,3.807059
+La Roseraie du Thabor,Dr Beuzeboc-Gerard Marion,80,Boulevard de la Duchesse Anne,35000,Rennes,Ille-et-Vilaine,France,48.114260,-1.680393
+Dr Bocquier Bertrand,,10,Boulevard Villebois Mareuil,35400,Saint Malo,Ille-et-Vilaine,France,48.650846,-2.006977
+Dr Cambie Vanderschelden Marie-Paul,,10,Boulevard Villebois Mareuil,35400,Saint Malo,Ille-et-Vilaine,France,48.650846,-2.006977
+Dr Manise Olivier,Livraison au Secrétariat,3,Impasse de la Vigie,35400,Saint-Malo,Ille-et-Vilaine,France,48.621558,-1.991734
+Dr Heusse Jean-Laurent,,11,Rue Chene Germain,35510,Cesson Sevigne,Ille-et-Vilaine,France,48.130624,-1.624586
+Dr Rostane-Renouard Denia,Selarl Dr Rostane-Renouard,,Avenue Saint-Vincent,35760,Saint Gregoire,Ille-et-Vilaine,France,48.143907,-1.683965
+Dr Behaghel Marc,Chp,6,Rue de la Boutiere,35768,Saint-Gregoire Cedex,Ille-et-Vilaine,France,48.143859,-1.693020
+Dr Elamrani Karim,,6,Boulevard de la Boutiere,35768,Saint-Gregoire Cedex,Ille-et-Vilaine,France,48.144594,-1.687152
+Dr Abiliou Vincent,Cabinet Médical,1,Avenue du Chateau Hébert,35800,Dinard,Ille-et-Vilaine,France,48.637698,-2.074706
+Centre Cleme 37,Dr Phu Paul et Dr Moussaoui,19,Rue d'Entraigues,37000,Tours,Indre-et-Loire,France,47.388074,0.688381
+Clinique des Champs Elysées,Julien Laloux,78,Jardin Francois 1er,37000,Tours,Indre-et-Loire,France,47.395895,0.685988
+Dr Abdo Morales Ivana,,15,Place Gaston Pailhou,37000,Tours,Indre-et-Loire,France,47.391360,0.680768
+Dr Body Sylvie,Cabinet Medical,24,Rue de Clocheville,37000,Tours,Indre-et-Loire,France,47.391279,0.685241
+Dr Delaplace Marion,Cabinet Medical,15,Place Gaston Pailhou,37000,Tours,Indre-et-Loire,France,47.391360,0.680768
+Dr Fanous Jamil,Cabinet Medical,30,Boulevard Heurteloup,37000,Tours,Indre-et-Loire,France,47.391160,0.694210
+Dr Khallouf Randa,,30,Boulevard Heurteloup,37000,Tours,Indre-et-Loire,France,47.391160,0.694210
+Dr Marie-Francoise Guillou Garnier,,16,Avenue de Grammont,37000,Tours,Indre-et-Loire,France,47.387898,0.690016
+Dr Marine Darrigade Fleury,,15,Place Gaston Pailhou,37000,Tours,Indre-et-Loire,France,47.391360,0.680768
+Dr Muller Christine,,24,Rue de Clocheville,37000,Tours,Indre-et-Loire,France,47.391279,0.685241
+Selarl  du Dr Delaplace Marion,,15,Place Gaston Pailhou,37000,Tours,Indre-et-Loire,France,47.391360,0.680768
+Dr Besset Marianne,,17,Avenue du Professeur Alexandre,37170,Chambray les Tours,Indre-et-Loire,France,47.333886,0.688003
+Pr Arnaud Paré Ei,Chu Trousseau,,Avenue de la République,37170,Chambray les Tours,Indre-et-Loire,France,47.344403,0.713894
+Pr Laure Boris,Chu Trousseau Consultation Maxillo,,Avenue de la Republique,37170,Chambray les Tours,Indre-et-Loire,France,47.344403,0.713894
+Dr Penaud Alexandre,"Leonard de Vinci -Bat ""le Lucé""",17,Avenue du Prof Minkowski,37175,Chambray les Tours,Indre-et-Loire,France,47.333886,0.688003
+Dr Catala-Petavy Carine,Cabinet Médical,13,Rue de Tartifume,37250,Veigne,Indre-et-Loire,France,47.298049,0.719111
+Dr Cristea Corina,,12,Allée John Ropper,37250,Montbazon,Indre-et-Loire,France,47.275244,0.708017
+Dr Abdallah-Lotf Myriam,Cabinet Medical,5,Rue Laennec,37300,Joue les Tours,Indre-et-Loire,France,47.349715,0.659548
+Dr Corven-Benoit Cloe,,5,Rue Laennec,37300,Joue les Tours,Indre-et-Loire,France,47.349715,0.659548
+Dr Herard Camille,Clinique Jeanne d'Arc,,Route de Tours,37500,Saint Benoit la Foret,Indre-et-Loire,France,47.187773,0.291160
+Dr Bernez Aude,Cmct - Livraison Secretariat,6,Rue Therese et Rene Planiol,37540,St Cyr sur Loire,Indre-et-Loire,France,47.432528,0.669788
+Dr Ricci Karine,Cmct- 1ere Etage,6,Rue Therese et Rene Planiol,37540,St Cyr sur Loire,Indre-et-Loire,France,47.432528,0.669788
+Dr Safar Roba,Cabinet Medical,19 BIS,Rue de la Ligniere,37540,St Cyr sur Loire,Indre-et-Loire,France,47.431310,0.643834
+Cedel,,26,Rue du Colonel Dumont,38000,Grenoble,Isere,France,45.181471,5.719419
+Dr Evrard Maria,Cabinet Medical,20,Boulevard Jean Pain,38000,Grenoble,Isere,France,45.185604,5.732312
+Dr Martinet Xavier,,3,Rue Felix Poulat,38000,Grenoble,Isere,France,45.190243,5.726732
+Dr Ratel Elisabeth,Cabinet Medical Code 2210b,1,Rue Président Carnot,38000,Grenoble,Isere,France,45.192004,5.731182
+Selarl Dr Cantin Stephanie,,60,Rue du Midi,38090,Villefontaine,Isere,France,45.617721,5.151895
+Dr Makhlouf Foued,Clinique Visage et Silhouette,19,Rue Lamartine,38170,Seyssinet-Pariset,Isere,France,45.179537,5.694862
+Dr Beille Laurence,Cabinet Medical,3,Allee des Centaurees,38240,Meylan,Isere,France,45.203181,5.765289
+Dr Haguenauer Benedicte,,7,Chemin de la Dhuy,38240,Meylan,Isere,France,45.213324,5.796880
+Dr Demengeon Fabrice 0644283221,Livraison Main Propres,1,Rue Georges Frier,38500,Voiron,Isere,France,45.365318,5.592306
+Dr Souillet Anne Laure,,280,Rue du Bourg,38620,Montferrat,Isere,France,45.488847,5.592461
+Dr Atallah Louis,Polyclinique du Parc,27,Rue Jean Heberling,39100,Dole,Jura,France,47.097203,5.507538
+Selarl Dr Thibouw Francois,,27,Rue Jean Heberling,39100,Dole,Jura,France,47.097203,5.507538
+Centre Origine Studio,Dr Peyre Eric,1234,Avenue du Vigneau,40000,Mont de Marsan,Landes,France,43.877622,-0.461477
+Dr Peyre Eric,Cabinet Medical,4,Avenue de la Ferme du Pasques,40000,Mont-de-Marsan,Landes,France,43.909501,-0.468525
+Dr Ameline Eric,Cabinet Medical,1,Rue des Iris,41260,La-Chaussee-Saint-Victor,Loir-et-Cher,France,47.601668,1.346237
+Dr Guyomarc'H Pantea,,168,Cours Fauriel,42100,Saint Etienne,Loire,France,45.421337,4.410364
+St Etienne Laser Médical,,14,Avenue Pierre Mendes France,42270,Saint Priest en Jarey,Loire,France,45.471044,4.373913
+Dr Chevallier Julie,Cabinet Medical,4,Rue Francois Bruneau,44000,Nantes,Loire-Atlantique,France,47.230687,-1.557415
+Dr Coutant Foulc Phryne,Centre de la Femme,5,Place Aristide Briand,44000,Nantes,Loire-Atlantique,France,47.217029,-1.563169
+Dr Lejeune Florence,,3,Rue de la Beraudiere,44000,Nantes,Loire-Atlantique,France,47.226446,-1.546455
+Dr Quentin Leurs,,20,Rue Crebillon,44000,Nantes,Loire-Atlantique,France,47.213576,-1.561166
+Dr Riaux Anne,Tour Socrate,,32-42 Rue Amiral Ronarc'H,44000,Nantes,Loire-Atlantique,France,47.225204,-1.546406
+Dr Chavigny Jean Marc,,6 BIS,Boulevard Pasteur,44100,Nantes,Loire-Atlantique,France,47.212471,-1.579909
+Selarl Jm Chavigny,,6 BIS,Boulevard Pasteur,44100,Nantes,Loire-Atlantique,France,47.212471,-1.579909
+Dr Charlotte Georges,,22,Rue des Pavillons,44220,Coueron,Loire-Atlantique,France,47.214679,-1.686847
+Clinique des Champs Elysées,La Baule -Dr Korb,,Galerie Passage Royal,44500,La Baule,Loire-Atlantique,France,47.288754,-2.363461
+Dr Korb Gilles,Pole Sante Entree d Niv 1,,Avenue Claude Bernard,44819,Saint-Herblain Cedex,Loire-Atlantique,France,47.226503,-1.612821
+Dr Darchy Gilliard Martine,Tel 02 38 54 27 08,29,Rue de la Republique,45000,Orleans,Loiret,France,47.905560,1.904658
+Dr Georgescu Voichita,,1,Rue des Charretiers,45000,Orleans,Loiret,France,47.898953,1.899280
+Dr Grandin Nathalie,Selarl Clema,16,Rue Francois Cevert,49000,Angers,Maine-et-Loire,France,47.444203,-0.543031
+Dr Lemerle Emmanuelle,,3,Rue de Pruniers,49000,Angers,Maine-et-Loire,France,47.471818,-0.586015
+Dr Fernandez Luc,,142,Avenue Mal de Lattre de Tassign,49044,Angers Cedex,Maine-et-Loire,France,47.446503,-0.537676
+Dr Delorme Nadia,,9,Rue Vaucanson,49100,Angers,Maine-et-Loire,France,47.484505,-0.546042
+Dr Maurice William,Cabinet Medical,13,Bd du Marechal Joffre,49100,Angers,Maine-et-Loire,France,47.471722,-0.544116
+Dr Rousseau Pascal,Chu Angers- Secr. Chirur Plast,4,Rue Larrey,49100,Angers,Maine-et-Loire,France,47.480948,-0.554426
+Dr Danin Aurelie,,36,Rue du Palais de Justice,50200,Coutances,Manche,France,49.051507,-1.442467
+Dr Alessandro Di Cesare,,30,Boulevard de la Paix,51100,Reims,Marne,France,49.253333,4.040814
+Dr Lavaquerie Sebastien,Cabinet Orl Cmf,2B,Rue Passe Demoiselles,51100,Reims,Marne,France,49.248778,4.016647
+Dr Perceau Geraldine,Scm  Remiderm,22,Rue Simon,51100,Reims,Marne,France,49.243242,4.039921
+Dr Plee Julie,Scm  Remiderm,22,Rue Simon,51100,Reims,Marne,France,49.243242,4.039921
+Dr Tiguemounine Jean,Bat 2 - 1er Etage,38 BIS,Rue de Courlancy,51100,Reims,Marne,France,49.245007,4.018590
+Dr Roulle Philippe,Cabinet Medical 2ème Étage,1,Rue Jules Meline,51430,Bezannes,Marne,France,49.215934,4.001953
+Scm Dr Martin Samuel,,24,Rue de l'Arquebuse,52100,St Dizier,Marne (Haute),France,48.636079,4.943634
+Dr Paty Jean Luc,1ère Etage,54,Rue Mazagran,53000,Laval,Mayenne,France,48.069681,-0.765714
+Dr Allamagny Eric,,28,Place de la Carriere,54000,Nancy,Meurthe-et-Moselle,France,48.696294,6.181836
+Dr Ferry Marie-Madeleine,,7,Rue Lyautey,54000,Nancy,Meurthe-et-Moselle,France,48.694091,6.186012
+Dr Redon Estelle,Cabinet Medical,6,Rue Vauban,54000,Nancy,Meurthe-et-Moselle,France,48.674197,6.167549
+Dr Simon Etienne,Hopital Central,29,Avenue Mal de Lattre de Tassigny,54000,Nancy,Meurthe-et-Moselle,France,48.683962,6.189472
+Dr Granddidier Julie,Chemin des Lias,8 BIS,Rue de la Poudrières,54130,Saint Max,Meurthe-et-Moselle,France,48.701149,6.203396
+Dr Muel Mégane,,13,Rue Blaise Pascal,54320,Maxeville,Meurthe-et-Moselle,France,48.703425,6.138723
+Dr Anais Gaufer Didelon,Cabinet Medical Capart,2,Rue Xavier Roge,54700,Pont A Mousson,Meurthe-et-Moselle,France,48.900890,6.049339
+Dr Dumont Marion,,27,Rue de Verdun,54800,Conflans en Jarnisy,Meurthe-et-Moselle,France,49.167226,5.854652
+Dr Guillou Pierre,,51,Boulevard du General Monsabert,56000,Vannes,Morbihan,France,47.663623,-2.781927
+Dr Maringe Elodie,Cabinet Medical,13,Rue Francois Toullec,56100,Lorient,Morbihan,France,47.732492,-3.379867
+Dr Lepelley Charlotte,,7 R,Genevieve de Gaulle Anthonioz,56260,Vannes,Morbihan,France,47.680343,-2.776893
+Dr Anne Sophie Thiry,,,Centre Commercial les 3 Soleils,56890,Plescop,Morbihan,France,47.697201,-2.830930
+Ac Resources,,26,Rue Haute Seille,57000,Metz,Moselle,France,49.116023,6.181274
+Selarl Dr Pauline Dorsemans,,31,Rue Bossuet,57000,Metz,Moselle,France,49.107022,6.163254
+Genesthetics,,1,Rue de Sarre,57070,Metz,Moselle,France,49.118453,6.231251
+Dr Boulanger Annie,,10,Rue F. Truffaut,57100,Thionville,Moselle,France,49.361311,6.136762
+Dr Khairallah Gregoire,,1,Allee du Chateau,57530,Ars Laquenexy,Moselle,France,49.083911,6.243164
+Dr Gayibor Leonce,,25,Rue de Nomeny,57950,Montigny les Metz,Moselle,France,49.088029,6.155212
+Dr Bouras Fatima,Cabinet Medical,140,Rue du Faubourg d'Arras,59000,Lille,Nord,France,50.610322,3.060483
+Dr Rodrigues Isabelle,,38,Rue d'Isly,59000,Lille,Nord,France,50.624826,3.038703
+Dr Roumazeille Alice,,23,Place Sebastopol,59000,Lille,Nord,France,50.629025,3.056982
+Dr Benjamin Ngo,,,Rue Emile Laine,59037,Lille,Nord,France,50.634163,3.004508
+Dr Ségolène Debruyne,,241,Avenue de la République,59110,La Madeleine,Nord,France,50.650380,3.079725
+Dr Delaoustre Bertrand,,8BIS,Avenue Henri Delecaux,59130,Lambersart,Nord,France,50.644721,3.033084
+Dr Amrani Zouina,,5,Rue du Seigneur Lannoy,59139,Wattignies,Nord,France,50.577212,3.047285
+Dr Line Khaddaj,,27,Rue de Gand,59200,Tourcoing,Nord,France,50.726746,3.157623
+Dr Lucie Dekerle,,118,Bd Jean Jaurès,59210,Coudekerque Branche,Nord,France,51.019536,2.380261
+Dr Alice Roumazeille,,45,Avenue de Flandre,59290,Wasquehal,Nord,France,50.663801,3.127021
+Dr Fanny le Goff,,14 BIS,Rue Pierre Cuvelier,59300,Aulnoy Lez Valenciennes,Nord,France,50.333229,3.525838
+Dr Guislain Veronique,,69,Avenue Saint Roch,59300,Valenciennes,Nord,France,50.364621,3.535266
+Dr Sarah Driouich,,19,Boulevard Froissart,59300,Valenciennes,Nord,France,50.362378,3.519220
+Selarl Stephane Rault,,3,Rue Ernest Hiolle,59300,Valenciennes,Nord,France,50.358022,3.534865
+Dr Clement Perrault,,120,Rue de l'Avenir,59390,Lys Lez Lannoy,Nord,France,50.667816,3.208600
+Dr Nicolas Queval,,120,Rue de l'Avenir,59390,Lys Lez Lannoy,Nord,France,50.667816,3.208600
+Dr Sara Allahyari,,75,Rue des Fusilles,59493,Villeneuve D’ascq,Nord,France,50.616910,3.149571
+Dr Brygo-Charlet Marie Andree,,3656,Avenue de Petite Synthe,59640,Dunkerque,Nord,France,51.018223,2.322582
+Dr Picry Aurore,Cabinet Orl,23,Rue Haddock,59650,Villeneuve d'Ascq,Nord,France,50.649246,3.127734
+Dr Fontaine Thierry,Centre de Dermatologie Esthétique,1015,Avenue de la Republique,59700,Marcq-en-Baroeul,Nord,France,50.660053,3.093543
+Dr Natalia Branczko,Clinique Confidence,278,Boulevard Clemenceau,59700,Marcq en Baroeul,Nord,France,50.663795,3.087364
+Dr Gustin Jean Marcel,,139,Avenue Jean Jaures,59790,Ronchin,Nord,France,50.607288,3.076228
+Dr Dascotte Elodie,Cabinet Medical,7,Avenue du President John F.kenned,59800,Lille,Nord,France,50.631862,3.066484
+Dr Xenitos Panagiota,Clinique Esthétique Omorfia,129,Rue Royale,59800,Lille,Nord,France,50.645324,3.053917
+Selas Dr Cherot Lionel,Clinique Gantois,150,Rue de Pierre Mauroy,59800,Lille,Nord,France,50.633663,3.067815
+Dr Morgane Fumery,Selarl Ethetique Beauvais,13,Rue Alcide de Gasperi,60000,Beauvais,Oise,France,49.447654,2.099158
+Sel Dr Barry Laurence,,9,Rue Carnot,60200,Compiegne,Oise,France,49.414037,2.824226
+Dr Bendennoune Paul,9h-12h et 16h-20h,6,Avenue de la Gare,60330,Le Plessis Belleville,Oise,France,49.094776,2.745232
+Dr Attenti Philippe,Cabinet Medical,21,Rue de Saintines,60410,Verberie,Oise,France,49.311029,2.739034
+Dr le Carbonnier Eric,Cabinet Medical,8,Rue de Villeneuve,61000,Alecon,Orne,France,48.428049,0.075881
+Dr Masson Jean-Francois,,34,Rue Emilie Loubet,62000,Arras,Pas-de-Calais,France,50.285812,2.785101
+Scm Dermatologie Saint Jean,"Drs Cartier,maire,gros",8,Square Saint Jean,62000,Arras,Pas-de-Calais,France,50.292035,2.770777
+Dr Andrieu Christophe,,6 BIS,Rue Jean de Vienne,62100,Calais,Pas-de-Calais,France,50.956221,1.849416
+Dr Eloueslati Aicha,Cabinet Medical,110,Rue Mollien,62100,Calais,Pas-de-Calais,France,50.955990,1.865795
+Dr Corinne Remont,,52,Boulevard Louis Brebion,62140,Hesdin la Forêt,Pas-de-Calais,France,50.371703,2.038633
+Dr Cagnard Joanna,Espace Santé,7,Route de Verton,62600,Groffliers,Pas-de-Calais,France,50.388164,1.610390
+Dr Aurelie Dorlencourt,,7,Rue Anne Franck,62950,Noyelles Godault,Pas-de-Calais,France,50.431901,2.998763
+Dr Fanget Emmanuel,,19,Route de Montmorin,63160,Billom,Puy-de-Dome,France,45.717816,3.342833
+Dr Sulvac  Abdurahman,,21,Rue de Sarlieve,63800,Cournon d'Auvergne,Puy-de-Dome,France,45.741463,3.159245
+Dr Contou-Carrere Stephanie,Clinique Marzet,40,Boulevard d'Alsace Lorraine,64000,Pau,Pyrenees-Atlantiques,France,43.303928,-0.364790
+Dr Loubeyres Sophie,Cabinet Sld,37TER,Avenue Alfred Nobel,64000,Pau,Pyrenees-Atlantiques,France,43.313076,-0.319238
+Dr Camille Sentucq,,3,Rue du Docteur Andre Vidal,64100,Bayonne,Pyrenees-Atlantiques,France,43.484693,-1.494082
+Dr Nadon Florian,,3,Rue du Docteur André Vidal,64100,Bayonne,Pyrenees-Atlantiques,France,43.484693,-1.494082
+Clinique des Champs Elysées,Dr Peyre Eric,7,Avenue Edouard Vii,64200,Biarritz.,Pyrenees-Atlantiques,France,43.483690,-1.558613
+Dr Eric Morin,,3 TER,Avenue Francois Mauriac,64200,Biaritz,Pyrenees-Atlantiques,France,43.479247,-1.557043
+Dr Hecquet Marion,,19,Boulevard du Bab,64200,Biarritz,Pyrenees-Atlantiques,France,43.486559,-1.537347
+Dr Peres Pierron Sylvie,Espace Diorama,3,Boulevard de Cascais,64200,Biarritz,Pyrenees-Atlantiques,France,43.476506,-1.547913
+Dr Krassoulia Alexandre,Residence la Roseraie,8,Rue du Chateau,64210,Bidart,Pyrenees-Atlantiques,France,43.458331,-1.576113
+Selarl Drmn,Dr Norpo Maria,375,Avenue Atherbea,64210,Bidart,Pyrenees-Atlantiques,France,43.436333,-1.592761
+Dr Delpech Christine,,109,Chemin de Chibau,64500,Saint Jean de Luz,Pyrenees-Atlantiques,France,43.408359,-1.627986
+Dr David Dominique,Les Alizees Entree C,45,Avenue Jean Leon Laporte,64600,Anglet,Pyrenees-Atlantiques,France,43.489705,-1.499408
+Dr Pistre Vincent,,95,Av d'Espagne,64600,Anglet,Pyrenees-Atlantiques,France,43.475272,-1.529207
+Dr Rigal Resplandy Emilie,Res. Casaou de Quintaou,14,Avenue Eugene Bernain,64600,Anglet,Pyrenees-Atlantiques,France,43.483829,-1.511176
+Selarl Dr Barbe Christel,Résidence Lavista,74,Avenue de la Chambre d'Amour,64600,Anglet,Pyrenees-Atlantiques,France,43.496198,-1.537057
+Selarl du Docteur Marie Tourrier,,45,Avenue Jean Leon Laporte,64600,Anglet,Pyrenees-Atlantiques,France,43.489705,-1.499408
+Dr Chloé Nagouas,,12,Allée de Bordenave,64990,Saint Pierre d'Irube,Pyrenees-Atlantiques,France,43.477023,-1.455678
+Dr Mahjoub Hella,Cabinet Medical,3,Rue Georges Ledormeur,65000,Tarbes,Pyrenees (Hautes),France,43.223797,0.076745
+Catalane Estetica Sarl,Docteur Arnold Philippe,6,Rue Pierre Curie,66000,Perpignan,,France,42.698745,2.888747
+Dr Arnold Philippe,,6,Rue Pierre Curie,66000,Perpignan,Pyrenees-Orientales,France,42.698745,2.888747
+Selarlu Muchir-Debecque Gaelle,,9,Boulevard Wilson,66000,Perpignan,Pyrenees-Orientales,France,42.701780,2.896194
+Dr Abdo Morales Ivana,,780,Avenue D’argelès sur Mer,66100,Perpignan,Pyrenees-Orientales,France,42.678608,2.911780
+Dr Canizares Francois,Cabinet Medical,3,Rue Edmé Mariotte,66100,Perpignan,Pyrenees-Orientales,France,42.690857,2.902425
+Dr Saloum Jean-Luc,,48,Avenue Joseph Sauvy,66140,Canet en Roussillon,Pyrenees-Orientales,France,42.704762,3.011193
+Dr Lanfrey Etienne,Medicentre Avicenne,20,Rue Avicenne,66330,Cabestany,Pyrenees-Orientales,France,42.691602,2.938220
+Dr Perez-Siscar Marie-Rose,Sas Perysis Thalacap Catalogne,1432,Avenue de la Cote Vermeille,66650,Banyuls-sur-Mer,Pyrenees-Orientales,France,42.479749,3.137004
+Dr Abensour Marc,,80,Allee de la Robertsau,67000,Strasbourg,Bas-Rhin,France,48.592131,7.770340
+Dr Chahrock Elahi Ctre Ophtal Rhin,,30,Rue de l'Ail,67000,Strasbourg,Bas-Rhin,France,48.579956,7.748787
+Dr Corinne Mutschler,,14,Quai Kléber,67000,Strasbourg,Bas-Rhin,France,48.586774,7.745690
+Dr Eve Lévy,Scp Adelis,,Boulevard Jacques Preiss,67000,Strasbourg,Bas-Rhin,France,48.591545,7.763183
+Dr Gigon Isabelle,Cabinet Medical,4,Rue du Marche,67000,Strasbourg,Bas-Rhin,France,48.584683,7.743092
+Dr Mary Fleur,,35,Avenue de la Paix,67000,Strasbourg,Bas-Rhin,France,48.591964,7.756822
+Dr Springinsfeld Geraldine,Scp Adelis,1,Boulevard Jacques Preiss,67000,Strasbourg,Bas-Rhin,France,48.592376,7.761520
+S.c.m. Drs Bollecker & Himy,,6,Avenue de la Liberte,67000,Strasbourg,Bas-Rhin,France,48.585865,7.757992
+Dr Matheis Jutta,,5,Rue de la Laine,67160,Wissembourg,Bas-Rhin,France,49.037198,7.946666
+Dr Fritsch Christine,,15,Rue Saint-Jacques,67210,Obernai,Bas-Rhin,France,48.455642,7.478338
+Dr Schaeffer Jean,,38,Rue du Général Rampont,67240,Bischwiller,Bas-Rhin,France,48.769182,7.856415
+Dr Tamarindi Philippe,,11,Rue Francaise,67240,Bischwiller,Bas-Rhin,France,48.767955,7.857579
+Dr Olivier Sanglade,,137,Route du Général de Gaulle,67300,Schiltigheim,Bas-Rhin,France,48.610041,7.733914
+Dr Cahn Christine,Cabinet Medical,142,Route de Bale,68000,Colmar,Haut-Rhin,France,48.060400,7.362955
+Dr Belfkira Fouad,Interphone Clyesth /allée Centrale,9,Quai Jean Moulin,69001,Lyon,Rhone,France,45.766576,4.837887
+Selarl Dr Van Der Stegen Damien,,77,Rue de la Republique,69002,Lyon,Rhone,France,45.758809,4.834918
+Dr Ronger Savle Sandra,,13,Rue Garibaldi,69006,Lyon,Rhone,France,45.772186,4.850130
+Dr Milan Marie,,5,Rue Chalopin,69007,Lyon,Rhone,France,45.752218,4.845276
+Dr Petiot Roland Antoinette,,62,Rue Francois Peissel,69300,Caluire-et-Cuire,Rhone,France,45.796875,4.843237
+Dr Korting Olivier,Polyclinique du Val de Saone,44,Rue Amboise Pare,71031,Macon,Saone-et-Loire,France,46.316407,4.812117
+Dr Chaignaud Lebreton Maryvette,Si Absent Livraison Dr Lebreton,3,Rue Moliere,72000,Le Mans,Sarthe,France,47.993790,0.217441
+Selas Dr Lamy Jérémie,Chirurgien Esthetique,26,Rue de l'Étoile,72000,Le Mans Cedex,Sarthe,France,48.005592,0.200998
+Centre Laser Medical le Théâtre,Tel 06 99 50 28 38  Mr Mefarey,18,Rue Croix d'Or,73000,Chambery,Savoie,France,45.564832,5.923884
+Selarl Persia-Dr Hashemi Anita,,253,Allée Promenade du Bord du Lac,73100,Aix -les-Bains,Savoie,France,45.699352,5.888933
+Dr Dellac Claire,,35,Place de l Europe,73200,Albertville,Savoie,France,45.675942,6.392632
+Dr Feuillade Marie-Luce,Cabinet Medical,3,Quai des Cordeliers,74000,Annecy,Savoie (Haute),France,45.899022,6.122720
+Dr Allard Anne,Cabinet Medical,99,Rue Saint Francois,74120,Megeve,Savoie (Haute),France,45.857920,6.618953
+Dr Boustany Raif,Le Panoramic,11,Avenue du Général de Gaulle,74200,Thonon les Bains,Savoie (Haute),France,46.369684,6.476122
+Dr Delmont Aurore,,325,Route du Col de Bluffy,74290,Bluffy,Savoie (Haute),France,45.870433,6.211161
+Dr Mon Wen Pin Axelle,Code: B1961 et 0405,76,Rue Réaumur,75002,Paris,Paris,France,48.866480,2.351880
+Clinique des Champs Sébastopol,,86,Boulevard Sébastopol,75003,Paris,Paris,France,48.865746,2.352491
+Dr Amode Reyhan,Centre de Dermatologie Paris Marais,9,Rue du Grand Veneur,75003,Paris,Paris,France,48.858963,2.365975
+Dr Farhi David,Cabinet de Dermatologie 12h-18h,8,Rue Saint Gilles,75003,Paris,Paris,France,48.857835,2.366870
+Dr Mazaud Canelle,Centre Dermatologie Paris Marais,9,Rue du Grand Veneur,75003,Paris,Paris,France,48.858963,2.365975
+Dr Lydia Belatreche,,88,Rue Bonaparte,75006,Paris,Paris,France,48.849384,2.332606
+Selarl Dr Thoux Zoe,,20,Rue de Seine,75006,Paris,Paris,France,48.855889,2.336625
+Csg Dr Obadia Deborah,Cabinet Medical,63 BIS,Rue de Varenne,75007,Paris,Paris,France,48.855132,2.318990
+Dr Aknin-Cahane Marie Claude,,5,Rue Cognacq-Jay,75007,Paris,Paris,France,48.861653,2.304664
+Dr Benouaiche Laurence,,8,Rue de Solférino,75007,Paris,Paris,France,48.860249,2.323382
+Dr Cahane Jean Pierre,,5,Rue Cognacq-Jay,75007,Paris,Paris,France,48.861653,2.304664
+Dr Canesi Michel,Code Porte: 6428,9,Place Vauban,75007,Paris,Paris,France,48.853076,2.310903
+Dr Caroline Mouselli,,30,Rue des Saints Pères,75007,Paris,Paris,France,48.855382,2.330825
+Dr Degois Gilles,,1,Rue de Villersexel,75007,Paris,Paris,France,48.858672,2.324751
+Aesthe Paris 04 Miron,,4,Avenue Matignon,75008,Paris,Paris,France,48.870156,2.312897
+Dr Berard Philippe,Cabinet Medical,34,Rue de Penthievre,75008,Paris,Paris,France,48.872403,2.313652
+Dr Dallaserra Myriam,,16,Rue Euler,75008,Paris,Paris,France,48.871049,2.298303
+Dr Meunier Philippe,Livraison en Mains Propres,7,Rue de Laborde,75008,Paris,Paris,France,48.875715,2.322323
+Sdef Lafaye - Fusade,,23,Rue Saint Petersbourg,75008,Paris,Paris,France,48.881658,2.325400
+Jectparismed,,45,Avenue Trudaine,75009,Paris,Paris,France,48.880806,2.341485
+Dr Midoz Segolene,,16,Rue Lucien Sampaix,75010,Paris,Paris,France,48.871949,2.360738
+Dr Vasileios Anyfantakis,Code 3748b et 3487a,129,Boulevard Richard Lenoir,75011,Paris,Paris,France,48.866110,2.368903
+Dr Bonte Isabelle,Code 1 5237 / Code 2 6614,7,Rue Edouard Manet,75013,Paris,Paris,France,48.832686,2.358047
+Dr Letournel Christine,,67,Rue de Tolbiac,75013,Paris,Paris,France,48.827278,2.369164
+Dr Ochonisky Sophie,Code Porte A2680,5,Villa Coeur de Vey,75014,Paris,Paris,France,48.830237,2.327908
+Dr Erbault Robert,,5,Rue de la Procession,75015,Paris,Paris,France,48.840295,2.305419
+Dr Granier Delphine,,15,Rue Chasseloup Laubat,75015,Paris,Paris,France,48.847502,2.305144
+Doctor And Co - Code A5b6,Dr Sebbah Simon et Sebbah Meyer,56,Rue Michel Ange,75016,Paris,Paris,France,48.843771,2.260523
+Dr Abitbol Jean,,1,Rue Largilliere,75016,Paris,Paris,France,48.857371,2.272835
+Dr Alvo Remi,,17,Avenue du Colonel Bonnet,75016,Paris,Paris,France,48.855785,2.277713
+Dr Benoit-Sauvan Marie-Christine,,53,Rue General Delestraint,75016,Paris,Paris,France,48.840200,2.256824
+Dr Butnaru Alain,,53,Avenue de Versailles,75016,Paris,Paris,France,48.847894,2.274464
+Dr Dalu Alexandra,Cabinet Medical,113,Avenue Victor Hugo,75016,Paris,Paris,France,48.859000,2.347000
+Dr Gridina Inna,Cabinet Medical,57,Rue Boissiere,75016,Paris,Paris,France,48.843106,2.263168
+Dr Levy Claude,Rdc - Code Porte 3847,130 B,Boulevard Exelmans,75016,Paris,Paris,France,48.843222,2.261624
+Dr Meurgey Isabelle,,53,Av. de Versailles,75016,Paris,Paris,France,48.847894,2.274464
+Dr Susini Bertrand,Code Porte 1952 - Droite,4,Rue de l'Abbe Gillet,75016,Paris,Paris,France,48.857062,2.280722
+Dr Thierry Ktorza,,19,Boulevard Flandrin,75016,Paris,Paris,France,48.845952,2.258102
+Dr Zriouel Siham,,11,Chaussée de la Muette,75016,Paris,Paris,France,48.858042,2.273753
+Paris Prévention,Dr Bensabat,50,Rue Copernic,75016,Paris,Paris,France,48.857084,2.275172
+Selarl du Dr Schartz,,21 BIS,Avenue d'Iena,75016,Paris,Paris,France,48.850000,2.263398
+Cabinet Medical et Laser Paris 17,Selarl,7,Place du General Catroux,75017,Paris,Paris,France,48.882461,2.309578
+Dr Ferrand Jean Yves,,152,Boulevard Malesherves,75017,Paris,Paris,France,48.886045,2.306490
+Dr Thirion Valerie,,1,Rue Chazelles,75017,Paris,Paris,France,48.879512,2.303384
+Selarl Dr Azoulay Laura,Centre Cmcc Code Porte 1406,23,Avenue Neil,75017,Paris,Paris,France,48.880778,2.295063
+Dr Danan Nelly,,28,Avenue Secretan,75019,Paris,Paris,France,48.881484,2.372401
+Dr Amar Nawal,,228,Rue des Pyrenees,75020,Paris,Paris,France,48.866978,2.397023
+Dr Arnaud Eric,,34,Avenue d'Eylau,75116,Paris,Paris,France,48.865163,2.283854
+Dr Benelli Charles,Scm Marceau,57,Avenue Marceau,75116,Paris,Paris,France,48.869813,2.297867
+Dr Chatel Harold,Cabinet Medical,12,Avenue Pierre 1er de Serbie,75116,Paris,Paris,France,48.866159,2.296944
+Dr Federico Catta,,5,Sq. Mignot,75116,Paris,Paris,France,48.862354,2.282619
+Dr Trevidic Patrick,,7,Rue Sontay,75116,Paris,Paris,France,48.870398,2.284241
+Sas Soyl Maison Eiffel,Dr Paze,6,Square Petrarque,75116,Paris,Paris,France,48.861425,2.282200
+Selarl Dr Mayeux Pierre-Alain,,123,Rue de Longchamp,75116,Paris,Paris,France,48.867243,2.277950
+Selarl du Dr Azoulay Philippe,,133,Rue Michel Ange,75116,Paris,Paris,France,48.859000,2.347000
+Dr Berthier Eve,,83,Rue Jeanne d'Arc,76000,Rouen,Seine-Maritime,France,49.445806,1.092681
+Dr Bosser Loic,,16,Rue Verte,76000,Rouen,Seine-Maritime,France,49.447872,1.093659
+Dr Isabelle Baste,,81,Bd de l'Europe,76000,Rouen,Seine-Maritime,France,49.450937,1.104768
+Ny Center,Dr Yadun Nathan,6,Place de la Republique,76000,Rouen,Seine-Maritime,France,49.437544,1.096565
+Selarl Valin,,51,Rue Jeanne d'Arc,76000,Rouen,Seine-Maritime,France,49.443735,1.091507
+Dr Bechu Sylvie,Clinique Mathilde,19,Rue de Lessard,76100,Rouen,Seine-Maritime,France,49.428010,1.095195
+Dr Chartaux Emilie,Clinique Mathilde Ii,19,Rue de Lessard,76100,Rouen,Seine-Maritime,France,49.428010,1.095195
+Dr Darbet Andrieu Emilie,Clinique Mathilde Ii,4,Rue d'Emendreville,76100,Rouen,Seine-Maritime,France,49.429200,1.095411
+Dr Gardeil Ludivine,,73,Boulevard de l'Europe,76100,Rouen,Seine-Maritime,France,49.425999,1.086440
+Dr Kerbrat Catherine,Clinique Mathilde Ii,19,Rue de Lessard,76100,Rouen,Seine-Maritime,France,49.428010,1.095195
+Dr Ouvry Muriel,Clinique Mathilde 2,19,Rue de Lessard,76100,Rouen,Seine-Maritime,France,49.428010,1.095195
+Dr Vinez Charlotte,,3,Rue Jacques Monod,76130,Saint Aignan,Seine-Maritime,France,49.477182,1.094629
+Dr Leconte Sidonie,,14,Rue du Marechal Foch,76190,Yvetot,,France,49.618306,0.746650
+Dr Perignon David Selarl,Clinique Saint Antoine,696,Rue Robert Pinchon,76230,Bois-Guillaume,Seine-Maritime,France,49.457699,1.106370
+Dr Surlemont Yves Selarl,Clinique St Antoine  Consult 1er,696,Rue Robert Pinchon,76230,Bois-Guillaume,Seine-Maritime,France,49.457699,1.106370
+Dr Spader Michel,Maison de Sante Caux Estuaire,,Rd 81 - Ancienne Vielle Route,76430,St Romain de Colbosc,Seine-Maritime,France,49.523385,0.356266
+Dr Denis Marie Helene,Selarl Mh Esthetique,272,Avenue Marc Jacquet,77000,Melun,Seine-et-Marne,France,48.556774,2.641812
+Selarl Dr Petrea Adina Esthetique,,272,Avenue Marc Jacquet,77000,Melun,Seine-et-Marne,France,48.556774,2.641812
+Dr Geneau Amandine,,31,Rue Gambetta,77100,Meaux,Seine-et-Marne,France,48.962322,2.884938
+Dr Marchetti Roberta,,3,Place de l'Eglise,77127,Lieusaint,Seine-et-Marne,France,48.632229,2.552155
+Centre Esthetique et Laser,Dr Penna,28,Rue du Marechal Joffre,78100,Saint-Germain-en-Laye,Yvelines,France,48.895492,2.087717
+Dr Cousin Testard Florence,Fond de la Cour Bat B,26,Avenue d'Epremesnil,78400,Chatou,Yvelines,France,48.886081,2.157489
+Dr Barbillon Claude,,1,Rue Charles Bourseul,78700,Conflans-Sainte-Honorine,Yvelines,France,48.999180,2.103912
+Dr Poinsteau Valerie,Cabinet Medical,189,Avenue de la Rochelle,79000,Niort,Charente-Maritime,France,46.316691,-0.472124
+Dr Beguin Laetitia,Le Tanin,34,Avenue d' Allemagne,80090,Amiens,Somme,France,49.870742,2.284476
+Dr Lesieur Gilles,Centre Iridis,32,Place Jean Jaures,81000,Albi,Tarn,France,43.924411,2.147515
+Dr Dorothée Charbonnier,,2,Rue Ferdinand Pelloutier,83000,Toulon,Var,France,43.123399,5.933372
+Dr Favoli Patrice,,165,Place de la Liberte,83000,Toulon,Var,France,43.126396,5.930755
+Dr Sarfati Eric,Grand Hotel,165,Place de la Liberte,83000,Toulon,Var,France,43.126396,5.930755
+Dr Mariha Leblond Belbachir,Centre Hebel,586,Avenue du Colonel Picot,83100,Toulon,Var,France,43.127522,5.963177
+Dr Bourniquel Marie,Cabinet d'Ophtalmologie,95,Chemin des 2 Freres,83190,Oullioules,Var,France,43.126627,5.853699
+Dr Geldof Céline,,893,Av du Maréchal Juin,83270,Saint Cyr sur Mer,Var,France,43.181302,5.698133
+Dr Lienard Wivine,Residence le Lys,113,Boulevard Martyrs de la Resista,83300,Draguignan,Var,France,43.533758,6.466395
+Dr Dousteyssier-Smarrito Laure,Cabinet Medical,8,Place Charles de Gaulle,83330,Le Beausset,Var,France,43.197109,5.802026
+Dr Ducloy Cedric,,365,Rue Pierre Seghers,84000,Avignon,Vaucluse,France,43.926658,4.838475
+Dr Verborg Ingrid,Maison Médicale de Mérindol,193A,Rue Ceux de Dien Bien Phu,84160,Cadenet,Vaucluse,France,43.728810,5.370446
+Dr Henon Paule Reine,,225,Cours Gambetta,84300,Cavaillon,Vaucluse,France,43.838252,5.038676
+Dr Isabelle Mounier,Centre Medical Esthétique Sablais,5,Rue des Abeilles,85100,Les Sables d'Olonnes,Vendee,France,46.497072,-1.784663
+Dr Van Hemelryck Thierry,Selarl Ouest Esthetique,1,Rue de la Maisonnette,85100,Les-Sables-d'Olonne,Vendee,France,46.499240,-1.778550
+Claame,Dr Chivilo,62,Avenue du Plateau des Glieres,86000,Poitiers,Vienne,France,46.601349,0.324596
+B.a.n.c. Dr Lavillenie,,2,Avenue des Fontaines,86270,La Roche Posay,Vienne,France,46.784395,0.811146
+Dr Doffoel-Hantz Valerie,Selarl Dermatolim Clinique Chenieux,18,Rue du General Catroux,87039,Limoges,Vienne (Haute),France,45.813524,1.283772
+Dr Longueville Claire,Selarl Dermatolim Clinique Chenieux,18,Rue du General Catroux,87039,Limoges,Vienne (Haute),France,45.813524,1.283772
+Skin Aesthetics 87,Dr Durieux Sebastien,223,Avenue de Landouge,87100,Limoges,Vienne (Haute),France,45.843250,1.192997
+Dr Bourrel Olivier,Residence Saint Pierre Fourier,33,Rue de la Prefecture,88000,Epinal,Vosges,France,48.169975,6.449980
+Dr Saute Serge,,3,Rue des Marmousets,89290,Venoy,Yonne,France,47.806031,3.637395
+Dr Barrie Laurence,Code Entrée 3945,4,Avenue Marechal Juin,91330,Yerres,Essonne,France,48.710795,2.486817
+Dr Boumedine Fadia,,34,Rue Marcel Bontemps,92100,Boulogne Billancourt,Hauts-de-Seine,France,48.826366,2.240224
+Dr Burin des Rosiers Bruno,,240,Boulevard Jean Jaures,92100,Boulogne-Billancourt,Hauts-de-Seine,France,48.829790,2.245554
+Le Centre,,55,Boulevard Jean Jaures,92100,Boulogne Billancourt,Hauts-de-Seine,France,48.840114,2.239957
+Dr Arfi Catherine,Cabinet Medical Code Porte B4587,58,Boulevard Gallieni,92130,Issy les Moulineaux,Hauts-de-Seine,France,48.828659,2.267377
+Dr Lagrange Giordano-Orsini Nicole,Cabinet Medical Code 462a,126,Avenue de Verdun,92130,Issy-les-Moulineaux,Hauts-de-Seine,France,48.820274,2.258064
+Centre Medical Paris Saint Honore,,5,Rue Gardenat Lapostol,92150,Suresnes,Hauts-de-Seine,France,48.873989,2.224507
+Clem Esthetique Medical,Drs Hosana S. et D. et Saul Leon,23,Rue des Bourets,92150,Suresnes,Hauts-de-Seine,France,48.868557,2.227128
+Centre Elase Neuilly,Dr Assous Julie,93,Avenue du Roule,92200,Neuilly sur Seine,Hauts-de-Seine,France,48.882586,2.277086
+Dr Chanel Laura,,75,Avenue Foch,92250,La Garenne Colombes,Hauts-de-Seine,France,48.907723,2.240567
+Dr Alakl May,Bt d - Code 5147 Rdc,91,Avenue du General Leclerc,92340,Bourg-la-Reine,Hauts-de-Seine,France,48.780344,2.315854
+Dr Awwad Alyae,,44,Rue du Bac,92600,Asnières sur Seine,Hauts-de-Seine,France,48.913294,2.278653
+Dr Stella Francesca,,14,Rue Pasteur,92600,Asnieres sur Seine,Hauts-de-Seine,France,48.905918,2.284417
+Selas du Dr Jiang Lei Laurent,,36,Rue de Prony,92600,Asnieres sur Seine,Hauts-de-Seine,France,48.913804,2.293916
+Dr Mezzoughi Sara,,145,Boulevard de Valmy,92700,Colombes,Hauts-de-Seine,France,48.931998,2.255041
+Dr Salines Jessica,,13,Mail Gabriel Peri,93150,Le Blanc Mesnil,Seine-Saint-Denis,France,48.938526,2.461642
+Dr Alloun Gabriel,,14,Rue Raymonde Salez,93260,Les Lilas,Seine-Saint-Denis,France,48.879375,2.417319
+Dr Messaoudi-Hadri Houria,Centre Medical,11,Place Gabriel Peri,93440,Dugny,Seine-Saint-Denis,France,48.954890,2.417628
+Dr Renard Delphine,Cabinet Medical,32,Rue Saint Hilaire,94210,Saint Maur des Fosses,Val-de-Marne,France,48.791042,2.512727
+Dr Majer Jacques,Orl Selarl,21,Avenue de Paris,94300,Vincennes,Val-de-Marne,France,48.845089,2.432065
+Dr Micallef Christelle,,16,Rue du Chemin Dupuis,95000,Cergy,Val-d'Oise,France,49.036037,2.073817
+Dr Mateo Delamarre Maryse,,29 BIS,Rue Alexande Prachay,95309,Pontoise,Val-d'Oise,France,49.049785,2.099543
+Dr Delot-El Fakhri Nada,Cabinet Medical,30,Boulevard d'Ormesson,95880,Enghien les Bains,Val-d'Oise,France,48.968833,2.309572
+Centre Medico-Esthé la Louisiane,Dr Caillot Françoise,9,Allée de la Louisiane,97200,Fort de France,MQ/Not assigned,France,14.624906,-61.077579
