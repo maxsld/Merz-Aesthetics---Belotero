@@ -1137,7 +1137,9 @@ main section[id],
   padding: clamp(20px, 2.4vw, 30px) clamp(14px, 1.8vw, 22px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* chiffre calé en haut, texte calé en bas : les 4 tuiles s'alignent
+     entre elles quelle que soit la longueur de la description */
+  justify-content: flex-start;
   border: 1px solid var(--line);
   background: #f2f2f2;
 }
@@ -1158,7 +1160,8 @@ main section[id],
 }
 .stat span {
   display: block;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   color: var(--orange);
   font-size: clamp(13px, 1vw, 15px);
   line-height: 1.4;
