@@ -902,71 +902,79 @@ main section[id],
 .callout-title sup { top: -0.45em; font-size: 0.7em; font-weight: 400; letter-spacing: 0; }
 
 /* ===================== BENEFITS ===================== */
+/* Mise en page reprise de la landing d'origine : cartes gris clair centrées,
+   icône en ligne au-dessus, posées sur le fond orange texturé. */
 .benefits {
   padding: var(--section-y) 0;
-  background:
-    linear-gradient(180deg, var(--paper) 0%, var(--orange-tint) 48%, var(--paper) 100%);
+  background: var(--orange-texture);
 }
 .benefits-head { text-align: center; margin-bottom: clamp(30px, 4vw, 52px); }
-.benefits-head .script { margin-bottom: 18px; }
-.benefits-head .lead { }
-#benefits-title { font-size: clamp(24px, 2.5vw, 38px); }
+.benefits-head .eyebrow { color: #fff; }
+.benefits-head .eyebrow::after { background: #fff; }
+#benefits-title { color: #fff; font-size: clamp(24px, 2.5vw, 38px); }
 
 .benefits-grid {
   display: flex;
   align-items: stretch;
-  gap: clamp(20px, 2.5vw, 34px);
+  gap: clamp(18px, 2vw, 26px);
 }
 
 .benefit-block {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  background: var(--paper);
-  border: 1px solid rgba(236, 116, 4, 0.16);
-  box-shadow: 0 24px 54px rgba(42, 42, 42, 0.08);
+  text-align: center;
+  padding: clamp(28px, 3vw, 44px) clamp(22px, 2.4vw, 34px) clamp(32px, 3.4vw, 48px);
+  background: #e7e7e6;   /* = fond des PNG d'icônes, pour qu'ils s'y fondent */
+  border: 0;
+  box-shadow: none;
 }
 
 .benefit-visual {
-  margin: 0;
-  position: relative;
-  background: var(--orange);
-}
-.benefit-visual::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 8px;
-  background: var(--orange);
+  margin: 0 0 clamp(20px, 2.2vw, 30px);
+  align-self: center;
+  width: clamp(150px, 14vw, 210px);
+  height: clamp(150px, 14vw, 210px);
+  overflow: hidden;
 }
 .benefit-visual img {
   width: 100%;
-  height: clamp(260px, 24vw, 340px);
+  height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
-  filter: brightness(1.04) saturate(1.04) contrast(1.02);
+  transform: scale(1.45);     /* zoom sur l'illustration */
+  /* les PNG ont un fond dégradé, pas un gris plat : on estompe le bord
+     carré pour qu'aucun liseré n'apparaisse sur la carte */
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 56%, transparent 72%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 56%, transparent 72%);
 }
-.benefit-copy {
-  padding: clamp(26px, 2.7vw, 36px);
-}
+.benefit-copy { padding: 0; }
 .benefit-copy h3 {
   margin: 0 0 16px;
   color: var(--ink);
   font-family: "Aeonik Pro", sans-serif;
-  font-size: clamp(22px, 1.8vw, 28px);
-  font-weight: 300;
-  line-height: 1.12;
+  font-size: clamp(16px, 1.25vw, 19px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-transform: uppercase;
 }
-.benefit-copy h3 span { color: var(--orange); }
 .benefit-copy p {
-  margin: 0 0 22px;
+  margin: 0;
   color: var(--ink-soft);
-  font-size: 15px;
+  font-size: clamp(14px, 1.05vw, 16px);
   line-height: 1.6;
 }
+.benefit-copy p strong { color: var(--ink); font-weight: 700; }
+
+/* bouton lisible sur le fond orange */
+.benefits-cta .btn {
+  background: #fff;
+  color: var(--orange);
+}
+.benefits-cta .btn:hover { background: var(--ink); color: #fff; }
+
 .benefit-stat {
   padding-top: 14px;
   border-top: 1px solid var(--line);
