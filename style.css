@@ -911,12 +911,12 @@ main section[id],
 .benefits-head { text-align: center; margin-bottom: clamp(26px, 3.4vw, 44px); }
 #benefits-title { font-size: clamp(24px, 2.5vw, 38px); }
 
-/* Le fond orange n'habille que la rangée de cartes, pas toute la section. */
+/* Le fond orange n'habille que la rangée de cartes, pas toute la section.
+   Padding identique sur les quatre côtés, calé sur l'écart entre les cartes. */
 .benefits-band {
-  padding: clamp(26px, 3.4vw, 52px) 0;
+  padding: clamp(18px, 2vw, 26px);
   background: var(--orange-texture);
 }
-.benefits-band .section-shell { padding-inline: clamp(14px, 2vw, 26px); }
 
 .benefits-grid {
   display: flex;
