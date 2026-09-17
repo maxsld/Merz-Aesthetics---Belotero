@@ -836,7 +836,7 @@ main section[id],
 .pin-left .pin-line-left-c   { flex: 0 0 44%; }  /* sillons nasogéniens  */
 .pin-left .pin-line-left-d   { flex: 0 0 45%; }  /* autour de la bouche  */
 .pin-right .pin-line-right-a { flex: 0 0 56%; }  /* tempes et joues      */
-.pin-right .pin-line-right-b { flex: 0 0 55%; }  /* joues                */
+.pin-right .pin-line-right-b { flex: 0 0 47%; }  /* joues (pommette)     */
 .pin-right .pin-line-right-c { flex: 0 0 65%; }  /* lèvres               */
 .pin-right .pin-line-right-d { flex: 0 0 68%; }  /* menton               */
 .pin-vline {
