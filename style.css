@@ -865,6 +865,14 @@ main section[id],
 .dot-vol { background: #7D2E8D; }  /* BELOTERO Volume  */
 .dot-rev { background: #00A19A; }  /* BELOTERO Revive  */
 
+/* Noms de produits dans les indications, au code couleur de la gamme */
+.indic { font-weight: 700; }
+.indic-bal { color: #EC7404; }
+.indic-int { color: #E6007E; }
+.indic-sof { color: #E0BE00; }   /* jaune assombri pour rester lisible sur fond clair */
+.indic-vol { color: #7D2E8D; }
+.indic-rev { color: #00A19A; }
+
 /* légende produits sous la photo */
 .areas-legend {
   display: flex;
