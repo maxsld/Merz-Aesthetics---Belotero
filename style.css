@@ -835,7 +835,7 @@ main section[id],
 .pin-left .pin-line-left-b   { flex: 0 0 34%; }  /* sous les yeux        */
 .pin-left .pin-line-left-c   { flex: 0 0 44%; }  /* sillons nasogéniens  */
 .pin-left .pin-line-left-d   { flex: 0 0 45%; }  /* autour de la bouche  */
-.pin-right .pin-line-right-a { flex: 0 0 56%; }  /* tempes et joues      */
+.pin-right .pin-line-right-a { flex: 0 0 45%; }  /* tempe                */
 .pin-right .pin-line-right-b { flex: 0 0 47%; }  /* joues (pommette)     */
 .pin-right .pin-line-right-c { flex: 0 0 65%; }  /* lèvres               */
 .pin-right .pin-line-right-d { flex: 0 0 68%; }  /* menton               */
@@ -1452,7 +1452,10 @@ main section[id],
 }
 .footer-brand img { width: 180px; height: auto; display: block; filter: invert(1); }
 .footer-bottom p { margin: 0; color: rgba(255, 255, 255, 0.5); font-size: 12px; }
-.footer-ref { margin: 16px 0 0; color: rgba(255, 255, 255, 0.42); font-size: 11px; line-height: 1.5; }
+.legal-code {
+  margin-top: 22px !important;
+  color: var(--ink-faint);
+}
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1120px) {
