@@ -873,6 +873,24 @@ main section[id],
 .indic-vol { color: #7D2E8D; }
 .indic-rev { color: #00A19A; }
 
+/* Disclaimers placés dans le contenu (et non plus en fin de page) */
+.hero-disclaimer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px clamp(20px, 4vw, 40px) 0;
+  color: var(--ink-faint);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.hero-disclaimer sup { top: -0.4em; font-size: 0.85em; }
+.benefits-disclaimer {
+  margin: 14px 0 0;
+  color: var(--ink-faint);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.benefits-disclaimer:first-of-type { margin-top: clamp(18px, 2vw, 26px); }
+
 /* légende produits sous la photo */
 .areas-legend {
   display: flex;
