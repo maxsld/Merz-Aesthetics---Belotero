@@ -803,7 +803,7 @@ main section[id],
   line-height: 1.3;
 }
 .pin-title strong { font-weight: 700; }
-.pin-title sup { top: -0.45em; font-weight: 400; letter-spacing: 0; }
+.pin-title sup { top: 0; font-weight: 400; letter-spacing: 0; }
 .pin-right .pin-text { text-align: left; }
 
 .pin-line,
@@ -925,7 +925,7 @@ main section[id],
   line-height: 1.3;
 }
 .callout-title strong { font-weight: 700; }
-.callout-title sup { top: -0.45em; font-weight: 400; letter-spacing: 0; }
+.callout-title sup { top: 0; font-weight: 400; letter-spacing: 0; }
 
 /* ===================== BENEFITS ===================== */
 /* Mise en page reprise de la landing d'origine : cartes gris clair centrées,
