@@ -833,7 +833,7 @@ main section[id],
    Les traits restent strictement horizontaux. */
 .pin-left .pin-line-left-a   { flex: 0 0 40%; }  /* front                */
 .pin-left .pin-line-left-b   { flex: 0 0 34%; }  /* sous les yeux        */
-.pin-left .pin-line-left-c   { flex: 0 0 42%; }  /* sillons nasogéniens  */
+.pin-left .pin-line-left-c   { flex: 0 0 39%; }  /* sillons nasogéniens  */
 .pin-left .pin-line-left-d   { flex: 0 0 45%; }  /* autour de la bouche  */
 .pin-right .pin-line-right-a { flex: 0 0 45%; }  /* tempe                */
 .pin-right .pin-line-right-b { flex: 0 0 47%; }  /* joues (pommette)     */
