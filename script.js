@@ -107,7 +107,10 @@ if (siteMenuLinks.length) {
     if (timeEl) timeEl.textContent = fmt(video.currentTime);
   });
 
+  // En production, l'autoplay échoue parfois au premier essai : on relance la
+  // lecture à chaque étape du chargement (même correctif que sur RADIESSE).
   const tryPlay = () => playCurrent();
+  video.addEventListener("loadeddata", tryPlay);
   video.addEventListener("canplay", tryPlay);
   window.addEventListener("load", tryPlay, { once: true });
   syncPlay();
@@ -279,7 +282,9 @@ if ("IntersectionObserver" in window) {
   const mapEl = document.getElementById("locator-map");
   if (!input || !searchBtn || !resultsBox || !mapEl || typeof L === "undefined") return;
 
-  const MAX_RESULTS = 8;
+  // Plafond haut : à 8, une recherche « Paris » n'affichait que 8 des 49 centres
+  // situés à moins de 60 km. Même défaut que sur RADIESSE, corrigé pareil.
+  const MAX_RESULTS = 50;
   const RADIUS_KM = 60;
   const FALLBACK = 3;
 
@@ -422,10 +427,14 @@ if ("IntersectionObserver" in window) {
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => (d?.length ? { lat: parseFloat(d[0].lat), lng: parseFloat(d[0].lon) } : null));
 
+  // Les tables départementales ne pointent que sur le centre du département
+  // (13008 -> Aix plutôt que Marseille) : elles ne servent qu'en dernier recours,
+  // quand les deux services de géocodage sont injoignables.
   const resolveQuery = (q) =>
     geocodeBan(q)
       .catch(() => null)
-      .then((loc) => loc || zipCoords(q) || cityCoords(q) || geocodeNominatim(q).catch(() => null));
+      .then((loc) => loc || geocodeNominatim(q).catch(() => null))
+      .then((loc) => loc || zipCoords(q) || cityCoords(q));
 
   const renderList = (items) => {
     listEl.innerHTML = "";
@@ -502,3 +511,13 @@ if ("IntersectionObserver" in window) {
 
   ensureMap();
 })();
+
+/* ---- Mesure d'audience : ouverture du doc locator ----
+   Même événement Matomo Tag Manager que sur la landing RADIESSE. Sans effet
+   si Matomo n'est pas chargé par le site. */
+document.addEventListener("click", (event) => {
+  if (event.target.closest('a[href="#praticien"]')) {
+    window._mtm = window._mtm || [];
+    window._mtm.push({ event: "doclocator_open" });
+  }
+});

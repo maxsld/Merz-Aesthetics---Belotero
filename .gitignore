@@ -41,3 +41,7 @@ assets/img/models/couple.jpg
 assets/img/models/duo-faces.jpg
 assets/img/models/face-map-landscape.jpg
 assets/img/models/results-model.jpg
+
+# Archive du plugin : générée par build-plugin.py --zip, jamais versionnée
+dist/
+__pycache__/
