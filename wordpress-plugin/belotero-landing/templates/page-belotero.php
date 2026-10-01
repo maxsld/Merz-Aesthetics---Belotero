@@ -217,10 +217,10 @@ defined( 'ABSPATH' ) || exit;
           <p>Les produits de comblement BELOTERO® répondent à un large éventail de préoccupations cutanées,<sup>4–8</sup> tout en offrant des résultats harmonieux et d'apparence naturelle qui vous ressemblent.<sup>3</sup></p>
           <p>BELOTERO® est indiqué pour :</p>
           <ul class="intro-list">
-            <li>Améliorer l'éclat de la peau de vos joues<sup style="left: -.6rem; top: -.6rem;">8</sup></li>
-            <li>Lisser vos rides et ridules<sup style="left: -.6rem; top: -.6rem;">4–6</sup></li>
-            <li>Restaurer le volume de votre visage<sup style="left: -.6rem; top: -.6rem;">7</sup></li>
-            <li>Sublimer la forme et le volume de vos lèvres<sup style="left: -.6rem; top: -.6rem;">4,5</sup></li>
+            <li>Améliorer l'éclat de la peau de vos joues<sup style="left: -.6rem !important; top: -.6rem !important;">8</sup></li>
+            <li>Lisser vos rides et ridules<sup style="left: -.6rem !important; top: -.6rem !important;">4–6</sup></li>
+            <li>Restaurer le volume de votre visage<sup style="left: -.6rem !important; top: -.6rem !important;">7</sup></li>
+            <li>Sublimer la forme et le volume de vos lèvres<sup style="left: -.6rem !important; top: -.6rem !important;">4,5</sup></li>
           </ul>
           <a class="btn" href="#zones">Voir les zones traitées</a>
         </div>
@@ -354,7 +354,7 @@ defined( 'ABSPATH' ) || exit;
 
             <!-- pins (zones et codes couleur de la page 9 de la brochure patient) -->
             <div class="pin pin-left">
-              <div class="pin-callout" style="top:20%;">
+              <div class="pin-callout" style="top:20% !important;">
                 <div class="pin-text"><span class="pin-title"><strong>Réduire</strong> les rides<sup>4</sup></span></div>
                 <span class="pin-line pin-line-left-a"></span>
                 <span class="pin-dots"><i class="dot dot-bal"></i></span>
@@ -362,7 +362,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-left">
-              <div class="pin-callout" style="top:31%;">
+              <div class="pin-callout" style="top:31% !important;">
                 <div class="pin-text"><span class="pin-title"><strong>Lisser la zone</strong> sous les yeux<sup>4</sup></span></div>
                 <span class="pin-line pin-line-left-b"></span>
                 <span class="pin-dots"><i class="dot dot-bal"></i></span>
@@ -370,7 +370,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-left">
-              <div class="pin-callout" style="top:39%;">
+              <div class="pin-callout" style="top:39% !important;">
                 <div class="pin-text"><span class="pin-title"><strong>Atténuer</strong> les sillons nasogéniens et les plis d'amertume<sup>4,5</sup></span></div>
                 <span class="pin-line pin-line-left-c"></span>
                 <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span>
@@ -378,7 +378,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-left">
-              <div class="pin-callout" style="top:48.5%;">
+              <div class="pin-callout" style="top:48.5% !important;">
                 <div class="pin-text"><span class="pin-title"><strong>Lisser les ridules</strong> autour de la bouche<sup>4,6</sup></span></div>
                 <span class="pin-line pin-line-left-d"></span>
                 <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-sof"></i></span>
@@ -386,7 +386,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-right">
-              <div class="pin-callout" style="top:23%;">
+              <div class="pin-callout" style="top:23% !important;">
                 <span class="pin-dots"><i class="dot dot-vol"></i></span>
                 <span class="pin-line pin-line-right-a"></span>
                 <div class="pin-text"><span class="pin-title"><strong>Restaurer le volume</strong> au niveau des tempes et des joues<sup>7</sup></span></div>
@@ -394,7 +394,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-right">
-              <div class="pin-callout" style="top:33%;">
+              <div class="pin-callout" style="top:33% !important;">
                 <span class="pin-dots"><i class="dot dot-rev"></i></span>
                 <span class="pin-line pin-line-right-b"></span>
                 <div class="pin-text"><span class="pin-title"><strong>Réhydrater et revitaliser la peau</strong> des joues<sup>8</sup></span></div>
@@ -402,7 +402,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-right">
-              <div class="pin-callout" style="top:42%;">
+              <div class="pin-callout" style="top:42% !important;">
                 <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span>
                 <span class="pin-line pin-line-right-c"></span>
                 <div class="pin-text"><span class="pin-title"><strong>Donner davantage de volume</strong> et d'harmonie aux lèvres<sup>4,5</sup></span></div>
@@ -410,7 +410,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
 
             <div class="pin pin-right">
-              <div class="pin-callout" style="top:54%;">
+              <div class="pin-callout" style="top:54% !important;">
                 <span class="pin-dots"><i class="dot dot-vol"></i></span>
                 <span class="pin-line pin-line-right-d"></span>
                 <div class="pin-text"><span class="pin-title"><strong>Redéfinir les contours</strong> du menton<sup>7</sup></span></div>

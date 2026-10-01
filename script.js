@@ -121,7 +121,9 @@ if (siteMenuLinks.length) {
 const faqItems = document.querySelectorAll(".faq-item");
 const setPanelHeight = (item, open) => {
   const panel = item.querySelector(".faq-panel");
-  if (panel) panel.style.height = open ? `${panel.scrollHeight}px` : "0px";
+  // Priorité « important » : dans le plugin WordPress, toute la feuille de style
+  // est en !important (protection contre le thème) et l'emporterait sinon.
+  if (panel) panel.style.setProperty("height", open ? `${panel.scrollHeight}px` : "0px", "important");
 };
 faqItems.forEach((item) => {
   const trigger = item.querySelector(".faq-trigger");
@@ -145,7 +147,7 @@ document.querySelectorAll(".definition-toggle").forEach((btn) => {
   const label = btn.querySelector(".definition-toggle-label");
   const setHeight = (open) => {
     const h = panel.firstElementChild.getBoundingClientRect().height;
-    panel.style.height = open ? `${Math.ceil(h)}px` : "0px";
+    panel.style.setProperty("height", open ? `${Math.ceil(h)}px` : "0px", "important");
   };
   btn.addEventListener("click", () => {
     const open = btn.getAttribute("aria-expanded") !== "true";
@@ -224,8 +226,8 @@ if ("IntersectionObserver" in window) {
 
   const setPos = (percent) => {
     pos = Math.max(0, Math.min(100, percent));
-    before.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
-    handle.style.left = `${pos}%`;
+    before.style.setProperty("clip-path", `inset(0 ${100 - pos}% 0 0)`, "important");
+    handle.style.setProperty("left", `${pos}%`, "important");
     compare.setAttribute("aria-valuenow", String(Math.round(pos)));
   };
 

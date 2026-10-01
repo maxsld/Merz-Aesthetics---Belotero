@@ -111,6 +111,8 @@ def build_template(html):
         if hook not in html:
             sys.exit(f"ERREUR : {hook} n'a pas pu être inséré")
 
+    html = important_inline_styles(html)
+
     header = ("<?php\n"
               "/**\n"
               " * Template de la landing BELOTERO®.\n"
@@ -123,10 +125,126 @@ def build_template(html):
     return header + html
 
 
+# ── Protection contre le CSS du thème ──────────────────────────────────────
+# Comme sur la landing RADIESSE, toutes les déclarations du plugin passent en
+# !important : une règle du thème qui viserait les mêmes éléments ne peut pas
+# l'emporter, même si le retrait des feuilles du thème échoue.
+# Le style.css du site reste sans !important ; seule la copie du plugin l'est.
+
+def _split_top(text, sep):
+    """Découpe sur sep, hors guillemets et parenthèses (url(), var()…)."""
+    parts, buf, depth, quote = [], [], 0, None
+    for ch in text:
+        if quote:
+            buf.append(ch)
+            if ch == quote:
+                quote = None
+            continue
+        if ch in "\"'":
+            quote = ch
+        elif ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif ch == sep and depth == 0:
+            parts.append("".join(buf))
+            buf = []
+            continue
+        buf.append(ch)
+    parts.append("".join(buf))
+    return parts
+
+
+def important_declarations(block):
+    out = []
+    for decl in _split_top(block, ";"):
+        if ":" not in decl or decl.strip() == "":
+            out.append(decl)
+        elif re.search(r"!\s*important\s*$", decl.strip(), re.I):
+            out.append(decl)
+        else:
+            out.append(decl.rstrip() + " !important")
+    return ";".join(out)
+
+
+def _boost_selector(sel):
+    """Ajoute :not(#_) à chaque sélecteur (spécificité d'un id), avant un
+    éventuel pseudo-élément, qui doit rester en dernier."""
+    out = []
+    for s in _split_top(sel, ","):
+        s = s.strip()
+        m = re.search(r"::?(?:before|after|placeholder|selection|marker|first-line|first-letter)\b.*$", s)
+        out.append(s[:m.start()] + ":not(#_)" + s[m.start():] if m else s + ":not(#_)")
+    return ", ".join(out)
+
+
+def keep_source_priority(css):
+    """Une déclaration déjà !important dans la source battait toutes les autres.
+    Une fois tout passé en !important, c'est la spécificité qui tranche et elle
+    peut perdre (ex. .legal-code battu par .legal-inner p). On la recopie donc
+    dans une règle au sélecteur renforcé, placée juste après."""
+    def repl(m):
+        sel, body = m.group(1), m.group(2)
+        imp = [d.strip() for d in _split_top(body, ";") if re.search(r"!\s*important", d, re.I)]
+        if not imp or sel.strip().startswith("@"):
+            return m.group(0)
+        return m.group(0) + "\n" + _boost_selector(sel) + " { " + "; ".join(imp) + "; }"
+    return re.sub(r"([^{}]+)\{([^{}]*)\}", repl, css)
+
+
+def add_important(css):
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = keep_source_priority(css)
+    out, buf, stack, quote, depth = [], [], [], None, 0
+    for ch in css:
+        if quote:
+            buf.append(ch)
+            if ch == quote:
+                quote = None
+            continue
+        if ch in "\"'":
+            quote = ch
+            buf.append(ch)
+            continue
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        if depth:
+            buf.append(ch)
+            continue
+        if ch == "{":
+            prelude = "".join(buf)
+            head = prelude.strip()
+            kind = head[1:].split()[0].split("(")[0].lower() if head.startswith("@") else "rule"
+            stack.append(kind)
+            out.append(prelude + "{")
+            buf = []
+        elif ch == "}":
+            content = "".join(buf)
+            kind = stack.pop() if stack else "rule"
+            skip = kind in ("font-face", "keyframes") or any(k in ("font-face", "keyframes") for k in stack)
+            if kind == "rule" and not skip:
+                content = important_declarations(content)
+            out.append(content + "}")
+            buf = []
+        else:
+            buf.append(ch)
+    out.append("".join(buf))
+    return "".join(out)
+
+
+def important_inline_styles(html):
+    """Les style="" du HTML doivent aussi primer sur la feuille en !important."""
+    return re.sub(r'style="([^"]*)"',
+                  lambda m: 'style="' + important_declarations(m.group(1)) + '"', html)
+
+
 # ── Feuille de style ───────────────────────────────────────────────────────
 def build_css(css):
     # La feuille vit dans assets/ : ses url("assets/x") deviennent url("x").
-    return re.sub(r'url\((["\']?)assets/', r'url(\1', css)
+    css = re.sub(r'url\((["\']?)assets/', r'url(\1', css)
+    return add_important(css)
 
 
 def main():
