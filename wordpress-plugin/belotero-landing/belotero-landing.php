@@ -282,7 +282,7 @@ function belotero_loc_geocode_nominatim( $c ) {
 }
 
 function belotero_loc_save_centers( array $centers ) {
-	// autoload = false : 505 centres ne doivent pas être chargés à chaque requête WP
+	// autoload = false : la liste ne doit pas être chargée à chaque requête WP
 	update_option( BELOTERO_LOC_OPTION, array_values( $centers ), false );
 	update_option( BELOTERO_LOC_STAMP, (string) time(), false );
 }
