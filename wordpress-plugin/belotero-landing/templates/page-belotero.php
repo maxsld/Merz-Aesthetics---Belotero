@@ -1,0 +1,611 @@
+<?php
+/**
+ * Template de la landing BELOTERO®.
+ *
+ * FICHIER GÉNÉRÉ par build-plugin.py à partir de index.html.
+ * Ne pas modifier ici : modifier le site, puis relancer le build.
+ */
+defined( 'ABSPATH' ) || exit;
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BELOTERO® | Inspiré par la nature. Conçu pour vous. | Merz Aesthetics France</title>
+
+  <meta name="theme-color" content="#EC7404">
+  <!-- Favicon Merz Aesthetics (identique au site mère et à la landing RADIESSE) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/favicon/favicon.ico">
+  <link rel="mask-icon" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Aucune ressource tierce au chargement : Leaflet et les polices sont
+       hébergés avec la page (pas d'IP transmise à un CDN ou à Google Fonts). -->
+  <link rel="stylesheet" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/vendor/leaflet/leaflet.min.css">
+  <link rel="stylesheet" href="<?php echo esc_url( BELOTERO_URL ); ?>assets/belotero.css">
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "<?php echo esc_url_raw( untrailingslashit( home_url() ) ); ?>/#organization",
+        "name": "Merz Aesthetics France",
+        "url": "<?php echo esc_url_raw( untrailingslashit( home_url() ) ); ?>/",
+        "logo": "<?php echo esc_url_raw( BELOTERO_URL ); ?>assets/img/logos/png/Merz_Belotero_Logo_orange_RGB.png",
+        "sameAs": []
+      },
+      {
+        "@type": "WebPage",
+        "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#webpage",
+        "url": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>",
+        "name": "BELOTERO® | Inspiré par la nature. Conçu pour vous.",
+        "description": "BELOTERO®, une collection de produits de comblement injectables à base d'acide hyaluronique avec une approche biomimétique, développée avec la technologie CPM®. Des résultats naturels qui vous ressemblent.",
+        "inLanguage": "fr-FR",
+        "isPartOf": { "@id": "<?php echo esc_url_raw( untrailingslashit( home_url() ) ); ?>/#organization" },
+        "about": { "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#product" },
+        "breadcrumb": { "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "<?php echo esc_url_raw( untrailingslashit( home_url() ) ); ?>/" },
+          { "@type": "ListItem", "position": 2, "name": "BELOTERO® — Biomimétique" }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#product",
+        "name": "BELOTERO®",
+        "brand": { "@type": "Brand", "name": "BELOTERO®" },
+        "manufacturer": { "@id": "<?php echo esc_url_raw( untrailingslashit( home_url() ) ); ?>/#organization" },
+        "description": "Collection de produits de comblement injectables à base d'acide hyaluronique avec une approche biomimétique, développée avec la technologie CPM®, pour des résultats d'apparence naturelle.",
+        "image": "<?php echo esc_url_raw( BELOTERO_URL ); ?>assets/img/logos/png/Merz_Belotero_Logo_orange_RGB.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "<?php echo esc_url_raw( untrailingslashit( get_permalink() ) ); ?>/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Comment agit BELOTERO® ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BELOTERO® est injecté par votre praticien esthétique dans différentes couches de la peau, selon votre plan de traitement. Sa technologie de Matrice Cohésive Polydensifiée (CPM®) est à l'origine de l'approche biomimétique* de la gamme, pour des résultats d'apparence naturelle. La collection BELOTERO® offre une gamme de traitements adaptés à vos besoins, de l'amélioration de l'hydratation de la peau à la réduction des rides, jusqu'à la restauration des volumes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les résultats attendus avec BELOTERO® ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Correctement injecté, BELOTERO® permet un résultat sur mesure répondant à des besoins variés, de la qualité de peau par l'hydratation à la restauration des volumes, et des résultats durables (de 3 à 18 mois chez la plupart des patients, selon le produit utilisé et la zone traitée)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment se déroule un traitement BELOTERO® ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avant chaque traitement, votre praticien esthétique échange avec vous afin de mieux comprendre vos envies et vos attentes. Il élabore et vous explique ensuite un plan de traitement personnalisé, en accord avec vos besoins. Avant le traitement, votre médecin vous expliquera les risques éventuels et vous informera des signes et des symptômes d'éventuelles complications. Une fois votre décision prise, le traitement peut commencer : votre praticien injecte les produits BELOTERO® adaptés directement dans la zone concernée."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Les effets sont‑ils visibles immédiatement ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, un résultat est visible peu après le traitement, puis continue de s'affiner au fil des jours suivants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps durent les effets d'un traitement BELOTERO® ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les résultats obtenus avec BELOTERO® sont durables et dépendent du produit utilisé et de l'indication traitée. Les résultats peuvent persister jusqu'à 18 mois dans le traitement du creux infra-orbitaire (cernes) avec BELOTERO® Balance. Cependant, ils ne sont pas permanents, car l'organisme dégrade naturellement l'acide hyaluronique au fil du temps. La durée exacte dépend du produit utilisé et de la zone traitée. Pour maintenir les résultats, le traitement pourra être renouvelé selon les recommandations de votre praticien."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le traitement BELOTERO® est‑il douloureux ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le traitement par les produits BELOTERO® est généralement associé à une gêne et une douleur minime. À l'exception de BELOTERO® Revive, tous les produits de la gamme contiennent de la lidocaïne pour un traitement plus confortable. Une anesthésie locale peut également être appliquée."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le traitement sera‑t‑il perceptible par mon entourage ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BELOTERO® offre des résultats d'apparence naturelle. Vous continuez à vous ressembler, simplement sublimé, avec un éclat frais ou une harmonie retrouvée, selon votre traitement, vos préférences, le résultat souhaité et l'expertise de votre professionnel de santé."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vais‑je avoir l'air « surchargé » ou gonflé ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Grâce à sa technologie CPM®, correctement injecté, BELOTERO® accompagne vos expressions naturelles, pour que l'on vous voie, vous, et non votre produit de comblement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Existe-t-il des effets indésirables ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'injection peut entraîner un léger saignement et un gonflement temporaire. Signalez à votre praticien esthétique toute pathologie préexistante ou sensibilité : il pourra alors évoquer avec vous les réactions et effets indésirables potentiels. Signalez à votre médecin si vous constatez un effet secondaire et tout effet indésirable aussitôt qu'il se produit. En particulier si vous observez un changement de votre vision, des signes d'accident vasculaire cérébral (incluant difficulté soudaine à parler, engourdissement ou faiblesse dans le visage, les bras ou les jambes, difficulté à marcher, affaissement du visage, céphalées sévères, étourdissement ou confusion), une apparence blanche de la peau, ou une douleur inhabituelle en cours de traitement ou peu de temps après. Réservé aux adultes ; ne doit pas être utilisé chez la femme enceinte ou allaitante."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <?php wp_head(); ?>
+</head>
+<body <?php body_class( 'belotero-page' ); ?>>
+<?php wp_body_open(); ?>
+  <header class="site-header" aria-label="Navigation principale">
+    <div class="site-header-inner">
+      <a class="site-brand" href="#top" aria-label="BELOTERO, retour en haut">
+        <span class="site-brand-mark">
+          <img class="site-brand-logo site-brand-logo-white" src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/logos/svg/Merz_Belotero_Logo_white_RGB.svg" alt="BELOTERO">
+          <img class="site-brand-logo site-brand-logo-color" src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/logos/svg/Merz_Belotero_Logo_orange_RGB.svg" alt="BELOTERO">
+        </span>
+      </a>
+
+      <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-menu" id="site-menu" aria-label="Menu principal">
+        <a class="site-menu-item" href="#definition">LE BIOMIMÉTISME</a>
+        <a class="site-menu-item" href="#benefices">BÉNÉFICES</a>
+        <a class="site-menu-item" href="#zones">ZONES TRAITÉES</a>
+        <a class="site-menu-item" href="#faq">FAQ</a>
+        <a class="site-menu-item site-menu-item-highlight" href="#praticien">TROUVER UN CENTRE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Présentation BELOTERO®">
+      <div class="hero-media">
+        <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/models/hero-brooke.jpg">
+          <source src="https://player.vimeo.com/progressive_redirect/playback/1200455705/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&amp;signature=0295eba62e3ba2305932c69524a74da72bf8ea63547b23c04953f2caed4f28fa" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Inspiré par la nature.<span class="script-inline">Conçu pour vous.</span></h1>
+          <p>Une collection de produits de comblement injectables à base d'acide hyaluronique conçue avec une approche biomimétique<sup>*,1</sup>, pour des résultats qui vous ressemblent, et d'apparence naturelle.<sup>2,3</sup></p>
+          <div class="hero-actions">
+            <a class="btn" href="#praticien">Trouver un centre</a>
+            <a class="btn btn-ghost" href="#benefices">Découvrir la gamme BELOTERO®</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hero-video-controls" aria-label="Contrôles de la vidéo">
+        <button class="video-toggle" type="button" aria-label="Mettre en pause"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
+        <button class="video-mute" type="button" aria-label="Activer le son"><i class="fa-solid fa-volume-xmark" aria-hidden="true"></i></button>
+        <span class="video-time">0:00</span>
+      </div>
+    </section>
+
+    <p class="hero-disclaimer">*Le terme « approche biomimétique » fait référence à la conception des gels BELOTERO®, fondée sur des propriétés physicochimiques favorisant leur capacité d'adaptation aux différents environnements tissulaires.<sup>1</sup></p>
+
+    <!-- ===================== INTRO : QU'EST-CE QUE BELOTERO ===================== -->
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="section-shell intro-grid">
+        <div class="intro-copy">
+          <span class="eyebrow eyebrow-left"><span class="eyebrow-label">QU'EST-CE QUE BELOTERO® ?</span></span>
+          <h2 id="intro-title">Sublimer. Restaurer. Lisser.<sup>4–8</sup></h2>
+          <p class="intro-benefit-word">EN HARMONIE AVEC VOTRE PEAU</p>
+          <p>BELOTERO® est la première et unique collection de produits de comblement à base d'acide hyaluronique utilisant la technologie exclusive <strong>Cohesive Polydensified Matrix (CPM®)</strong>, favorisant ainsi une intégration tissulaire harmonieuse pour des résultats d'apparence naturelle.<sup>1,2,3,9</sup></p>
+          <p>Les produits de comblement BELOTERO® répondent à un large éventail de préoccupations cutanées,<sup>4–8</sup> tout en offrant des résultats harmonieux et d'apparence naturelle qui vous ressemblent.<sup>3</sup></p>
+          <p>BELOTERO® est indiqué pour :</p>
+          <ul class="intro-list">
+            <li>Améliorer l'éclat de la peau de vos joues<sup style="left: -.6rem; top: -.6rem;">8</sup></li>
+            <li>Lisser vos rides et ridules<sup style="left: -.6rem; top: -.6rem;">4–6</sup></li>
+            <li>Restaurer le volume de votre visage<sup style="left: -.6rem; top: -.6rem;">7</sup></li>
+            <li>Sublimer la forme et le volume de vos lèvres<sup style="left: -.6rem; top: -.6rem;">4,5</sup></li>
+          </ul>
+          <a class="btn" href="#zones">Voir les zones traitées</a>
+        </div>
+        <figure class="intro-visual">
+          <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/models/portrait-alejandra.jpg" alt="Portrait d'une femme au teint lumineux, visuel de campagne BELOTERO®" loading="lazy">
+          <figcaption>Modèles à des fins d'illustration.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== DÉFINITION BIOMIMÉTIQUE ===================== -->
+    <section id="definition" class="biomimetic" aria-labelledby="biomimetic-title">
+      <div class="section-shell biomimetic-inner">
+        <span class="eyebrow"><span class="eyebrow-label">QU'EST-CE QUE LE CONCEPT DU BIOMIMÉTISME ?<sup>10</sup></span></span>
+        <h2 class="section-title" id="biomimetic-title">Définition : <em>bio·mi·mé·tique</em></h2>
+        <div class="definition-card">
+          <p class="definition-pron">bio·mi·mé·tique <span>/ bjɔmimetik /</span></p>
+          <p class="definition-roots">Du grec ancien « bios » (la vie) &amp; « mimesis » (imiter)</p>
+          <p class="definition-text">Dérivés des mots grecs anciens « bios » (la vie) et « mimesis » (imiter), les ingrédients biomimétiques puisent leur inspiration dans la <strong>nature elle-même</strong>. En travaillant <strong>en harmonie</strong> avec votre peau, ils visent à sublimer ce qui est déjà là.</p>
+        </div>
+
+        <div class="definition-columns">
+          <article class="definition-block">
+            <h3>Avez-vous déjà entendu parler du concept du biomimétisme ?</h3>
+            <p>L'approche biomimétique s'inspire de la nature. Issue des mots grecs <em>bios</em> (vie) et <em>mimesis</em> (imitation), elle consiste à reproduire la structure, la fonction et le comportement des systèmes naturels.</p>
+            <p>En médecine esthétique, les ingrédients biomimétiques s'inspirent de substances naturellement présentes dans la peau. Conçus pour agir en harmonie avec celle-ci, ils s'intègrent naturellement et favorisent un résultat doux et naturel.<sup>10</sup></p>
+          </article>
+
+          <article class="definition-block">
+            <h3>L'acide hyaluronique : un ingrédient biomimétique</h3>
+            <p>L'acide hyaluronique (AH) est naturellement produit par l'organisme afin de maintenir l'hydratation et la souplesse de la peau. Il est capable de retenir de grandes quantités d'eau et agit ainsi comme un hydratant naturel des tissus.</p>
+            <div class="definition-more" id="definition-more-ah">
+              <div class="definition-more-inner">
+                <p>À partir du milieu de la vingtaine, la production naturelle d'acide hyaluronique diminue progressivement. Lorsque son taux baisse, la peau peut devenir plus sèche et moins élastique, ce qui favorise l'apparition de ridules, de rides et la perte progressive des contours du visage.</p>
+                <p>La médecine esthétique propose différentes solutions pour répondre à ces changements. Les produits de comblement à base d'acide hyaluronique couvrent un large éventail d'indications : lissage des rides, embellissement des lèvres, restauration des volumes du visage et amélioration de l'éclat de la peau.</p>
+              </div>
+            </div>
+            <button class="definition-toggle" type="button" aria-expanded="false" aria-controls="definition-more-ah">
+              <span class="definition-toggle-label">Voir plus</span>
+              <span class="definition-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HARMONIE AVEC VOTRE PEAU ===================== -->
+    <section class="harmony" aria-labelledby="harmony-title">
+      <div class="section-shell harmony-grid">
+        <div class="harmony-copy">
+          <h2 class="section-title" id="harmony-title">Agir en harmonie avec <span>votre peau</span></h2>
+          <p>Les acides hyaluroniques biomimétiques agissent en harmonie avec votre peau, jamais contre elle. Conçus pour réhydrater la peau, lisser aussi bien les ridules fines que les rides profondes et restaurer l'équilibre, ils subliment vos traits naturels pour des résultats qui paraissent frais, sans effort apparent, et fidèles à vous-même.<sup>10</sup></p>
+        </div>
+        <figure class="harmony-visual">
+          <div class="harmony-crop">
+            <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/harmony-group.webp" alt="Portrait de deux femmes à la peau lumineuse" loading="lazy">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== BÉNÉFICES ===================== -->
+    <section id="benefices" class="benefits" aria-labelledby="benefits-title">
+      <div class="section-shell">
+        <div class="benefits-head">
+          <span class="eyebrow"><span class="eyebrow-label">BELOTERO® – CONÇU AVEC UNE APPROCHE BIOMIMÉTIQUE<sup>*,1</sup></span></span>
+          <h2 class="section-title" id="benefits-title">Qu'est-ce qui rend la collection de produits de comblement à l'acide hyaluronique BELOTERO® différente ?</h2>
+        </div>
+      </div>
+
+      <!-- bandeau orange : il n'habille que la rangée de cartes -->
+      <div class="section-shell">
+        <div class="benefits-band">
+        <div class="benefits-grid">
+          <article class="benefit-block">
+            <figure class="benefit-visual">
+              <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/icon-section-solution-1.png" alt="" loading="lazy">
+            </figure>
+            <div class="benefit-copy">
+              <h3>UNE TECHNOLOGIE UNIQUE</h3>
+              <p>BELOTERO® est la <strong>première et unique</strong> collection de produits de comblement à base d'acide hyaluronique utilisant la technologie exclusive <strong>Cohesive Polydensified Matrix (CPM®)</strong>, favorisant ainsi une <strong>intégration tissulaire harmonieuse</strong> pour des résultats d'apparence naturelle.<sup>1,2,3,9</sup> Elle est conçue pour <strong>agir en harmonie avec votre peau</strong>.<sup>1</sup></p>
+            </div>
+          </article>
+
+          <article class="benefit-block">
+            <figure class="benefit-visual">
+              <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/icon-section-solution-2.png" alt="" loading="lazy">
+            </figure>
+            <div class="benefit-copy">
+              <h3>DES RÉSULTATS D'APPARENCE NATURELLE<sup>3</sup></h3>
+              <p>La collection BELOTERO® propose des options de traitement personnalisées et sur mesure qui <strong>répondent à un large éventail de besoins</strong>, de l'hydratation de la peau à la lutte contre les signes de l'âge et à l'augmentation du volume des lèvres.<sup>3,4–8</sup> Elle est conçue pour offrir des résultats d'apparence naturelle<sup>3</sup> et durables<sup>**</sup>. BELOTERO® respecte vos traits naturels et vos expressions faciales.<sup>3,11</sup></p>
+            </div>
+          </article>
+
+          <article class="benefit-block">
+            <figure class="benefit-visual">
+              <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/icon-section-solution-3.png" alt="" loading="lazy">
+            </figure>
+            <div class="benefit-copy">
+              <h3>UN HÉRITAGE EN QUI VOUS POUVEZ AVOIR CONFIANCE</h3>
+              <p>BELOTERO® est sur le marché depuis <strong>plus de 20 ans</strong> et s'appuie sur plus de 150 publications scientifiques.<sup>12</sup></p>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+
+      <div class="section-shell">
+        <p class="benefits-disclaimer">*Le terme « approche biomimétique » fait référence à la conception des gels BELOTERO®, fondée sur des propriétés physicochimiques favorisant leur capacité d'adaptation aux différents environnements tissulaires.<sup>1</sup></p>
+        <p class="benefits-disclaimer">**Les résultats peuvent durer de 3 à 18 mois chez la plupart des patients, selon le produit BELOTERO® utilisé et l'indication traitée. Les résultats ne sont pas permanents.</p>
+
+        <div class="benefits-cta">
+          <a class="btn" href="#praticien">Trouver un centre</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ZONES TRAITÉES (CALLOUTS) ===================== -->
+    <section id="zones" class="areas" aria-labelledby="areas-title">
+      <div class="section-shell">
+        <div class="areas-head">
+          <h2 class="section-title" id="areas-title">Une réponse ciblée, <br> <em>zone par zone</em></h2>
+          <p class="lead">BELOTERO® offre une large gamme d'options de traitement, pour des résultats adaptés à vos besoins spécifiques.<sup>4–8</sup></p>
+        </div>
+
+        <div class="areas-stage">
+          <figure class="areas-figure">
+            <div class="areas-crop">
+              <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/img-callout.webp" alt="Portrait d'une femme illustrant les zones traitées par BELOTERO®" loading="lazy">
+            </div>
+
+            <!-- pins (zones et codes couleur de la page 9 de la brochure patient) -->
+            <div class="pin pin-left">
+              <div class="pin-callout" style="top:20%;">
+                <div class="pin-text"><span class="pin-title"><strong>Réduire</strong> les rides<sup>4</sup></span></div>
+                <span class="pin-line pin-line-left-a"></span>
+                <span class="pin-dots"><i class="dot dot-bal"></i></span>
+              </div>
+            </div>
+
+            <div class="pin pin-left">
+              <div class="pin-callout" style="top:31%;">
+                <div class="pin-text"><span class="pin-title"><strong>Lisser la zone</strong> sous les yeux<sup>4</sup></span></div>
+                <span class="pin-line pin-line-left-b"></span>
+                <span class="pin-dots"><i class="dot dot-bal"></i></span>
+              </div>
+            </div>
+
+            <div class="pin pin-left">
+              <div class="pin-callout" style="top:39%;">
+                <div class="pin-text"><span class="pin-title"><strong>Atténuer</strong> les sillons nasogéniens et les plis d'amertume<sup>4,5</sup></span></div>
+                <span class="pin-line pin-line-left-c"></span>
+                <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span>
+              </div>
+            </div>
+
+            <div class="pin pin-left">
+              <div class="pin-callout" style="top:48.5%;">
+                <div class="pin-text"><span class="pin-title"><strong>Lisser les ridules</strong> autour de la bouche<sup>4,6</sup></span></div>
+                <span class="pin-line pin-line-left-d"></span>
+                <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-sof"></i></span>
+              </div>
+            </div>
+
+            <div class="pin pin-right">
+              <div class="pin-callout" style="top:23%;">
+                <span class="pin-dots"><i class="dot dot-vol"></i></span>
+                <span class="pin-line pin-line-right-a"></span>
+                <div class="pin-text"><span class="pin-title"><strong>Restaurer le volume</strong> au niveau des tempes et des joues<sup>7</sup></span></div>
+              </div>
+            </div>
+
+            <div class="pin pin-right">
+              <div class="pin-callout" style="top:33%;">
+                <span class="pin-dots"><i class="dot dot-rev"></i></span>
+                <span class="pin-line pin-line-right-b"></span>
+                <div class="pin-text"><span class="pin-title"><strong>Réhydrater et revitaliser la peau</strong> des joues<sup>8</sup></span></div>
+              </div>
+            </div>
+
+            <div class="pin pin-right">
+              <div class="pin-callout" style="top:42%;">
+                <span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span>
+                <span class="pin-line pin-line-right-c"></span>
+                <div class="pin-text"><span class="pin-title"><strong>Donner davantage de volume</strong> et d'harmonie aux lèvres<sup>4,5</sup></span></div>
+              </div>
+            </div>
+
+            <div class="pin pin-right">
+              <div class="pin-callout" style="top:54%;">
+                <span class="pin-dots"><i class="dot dot-vol"></i></span>
+                <span class="pin-line pin-line-right-d"></span>
+                <div class="pin-text"><span class="pin-title"><strong>Redéfinir les contours</strong> du menton<sup>7</sup></span></div>
+              </div>
+            </div>
+          </figure>
+
+          <ul class="areas-legend">
+            <li><i class="dot dot-bal"></i>BELOTERO® Balance</li>
+            <li><i class="dot dot-int"></i>BELOTERO® Intense</li>
+            <li><i class="dot dot-sof"></i>BELOTERO® Soft</li>
+            <li><i class="dot dot-vol"></i>BELOTERO® Volume</li>
+            <li><i class="dot dot-rev"></i>BELOTERO® Revive</li>
+          </ul>
+
+          <!-- version mobile : liste -->
+          <div class="areas-mobile-list">
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-bal"></i></span><span class="callout-title"><strong>Réduire</strong> les rides<sup>4</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-bal"></i></span><span class="callout-title"><strong>Lisser la zone</strong> sous les yeux<sup>4</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-vol"></i></span><span class="callout-title"><strong>Restaurer le volume</strong> au niveau des tempes et des joues<sup>7</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-rev"></i></span><span class="callout-title"><strong>Réhydrater et revitaliser la peau</strong> des joues<sup>8</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span><span class="callout-title"><strong>Atténuer</strong> les sillons nasogéniens et les plis d'amertume<sup>4,5</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-int"></i></span><span class="callout-title"><strong>Donner davantage de volume</strong> et d'harmonie aux lèvres<sup>4,5</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-bal"></i><i class="dot dot-sof"></i></span><span class="callout-title"><strong>Lisser les ridules</strong> autour de la bouche<sup>4,6</sup></span></div>
+            <div class="area-card"><span class="pin-dots"><i class="dot dot-vol"></i></span><span class="callout-title"><strong>Redéfinir les contours</strong> du menton<sup>7</sup></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS BAND ===================== -->
+    <section class="stats" aria-label="Chiffres clés BELOTERO®">
+      <div class="stats-inner">
+        <div class="stat"><strong>+20 ans</strong><span>d'expérience scientifique et clinique<sup>9,12</sup></span></div>
+        <div class="stat"><strong>+150</strong><span>publications scientifiques : la gamme est soutenue par plus de 150 publications depuis 2005.<sup>12</sup></span></div>
+        <div class="stat"><strong>+90 pays</strong><span>les produits BELOTERO® sont commercialisés dans plus de 90 pays.<sup>13</sup></span></div>
+        <div class="stat"><strong>+21 M</strong><span>de seringues ont été expédiées à travers le monde.<sup>13</sup></span></div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="section-shell">
+        <div class="faq-head">
+          <h2 class="section-title" id="faq-title">Les réponses à <br> <em>vos questions</em></h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item is-open">
+            <button class="faq-trigger" type="button" aria-expanded="true"><span class="faq-question">Comment agit BELOTERO® ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">BELOTERO® est injecté par votre praticien esthétique dans différentes couches de la peau, selon votre plan de traitement. Sa technologie de Matrice Cohésive Polydensifiée (CPM®) est à l'origine de l'approche biomimétique<sup>*</sup> de la gamme<sup>1</sup>, pour des résultats d'apparence naturelle.<sup>3</sup> La collection BELOTERO® offre une gamme de traitements adaptés à vos besoins, de l'amélioration de l'hydratation de la peau à la réduction des rides, jusqu'à la restauration des volumes.<sup>4–8</sup></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Quels sont les résultats attendus avec BELOTERO® ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Correctement injecté, BELOTERO® permet :
+              <ul>
+                <li>Un résultat sur mesure répondant à des besoins variés, de la qualité de peau par l'hydratation à la restauration des volumes<sup>4–8</sup></li>
+                <li>Des résultats durables<sup>*</sup></li>
+              </ul>
+              <p class="answer-note">*Les résultats peuvent durer de 3 à 18 mois chez la plupart des patients, selon le produit BELOTERO® utilisé et l'indication traitée.</p></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Comment se déroule un traitement BELOTERO® ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Avant chaque traitement, votre praticien esthétique échange avec vous afin de mieux comprendre vos envies et vos attentes. Il élabore et vous explique ensuite un plan de traitement personnalisé, en accord avec vos besoins. Avant le traitement, votre médecin vous expliquera les risques éventuels et vous informera des signes et des symptômes d'éventuelles complications. Une fois votre décision prise, le traitement peut commencer : votre praticien injecte les produits BELOTERO® adaptés directement dans la zone concernée.</div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Les effets sont‑ils visibles immédiatement ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Oui, un résultat est visible peu après le traitement, puis continue de s'affiner au fil des jours suivants.</div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Combien de temps durent les effets d'un traitement BELOTERO® ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Les résultats obtenus avec BELOTERO® sont durables et dépendent du produit utilisé et de l'indication traitée. Les résultats peuvent persister jusqu'à 18 mois dans le traitement du creux infra-orbitaire (cernes) avec BELOTERO® Balance. Cependant, ils ne sont pas permanents, car l'organisme dégrade naturellement l'acide hyaluronique au fil du temps. La durée exacte dépend du produit utilisé et de la zone traitée. Pour maintenir les résultats, le traitement pourra être renouvelé selon les recommandations de votre praticien.</div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Le traitement BELOTERO® est‑il douloureux ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Le traitement par les produits BELOTERO® est généralement associé à une gêne et une douleur minime. À l'exception de BELOTERO® Revive, tous les produits de la gamme contiennent de la lidocaïne pour un traitement plus confortable. Une anesthésie locale peut également être appliquée.</div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Le traitement sera‑t‑il perceptible par mon entourage ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">BELOTERO® offre des résultats d'apparence naturelle.<sup>3</sup> Vous continuez à vous ressembler, simplement sublimé, avec un éclat frais ou une harmonie retrouvée, selon votre traitement, vos préférences, le résultat souhaité et l'expertise de votre professionnel de santé.</div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Vais‑je avoir l'air « surchargé » ou gonflé ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">Grâce à sa technologie CPM®, correctement injecté, BELOTERO® accompagne vos expressions naturelles, pour que l'on vous voie, vous, et non votre produit de comblement.<sup>1</sup></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-trigger" type="button" aria-expanded="false"><span class="faq-question">Existe-t-il des effets indésirables ?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+            <div class="faq-panel"><div class="faq-answer">L'injection peut entraîner un léger saignement et un gonflement temporaire. Signalez à votre praticien esthétique toute pathologie préexistante ou sensibilité : il pourra alors évoquer avec vous les réactions et effets indésirables potentiels. Signalez à votre médecin si vous constatez un effet secondaire et tout effet indésirable aussitôt qu'il se produit. En particulier si vous observez un changement de votre vision, des signes d'accident vasculaire cérébral (incluant difficulté soudaine à parler, engourdissement ou faiblesse dans le visage, les bras ou les jambes, difficulté à marcher, affaissement du visage, céphalées sévères, étourdissement ou confusion), une apparence blanche de la peau, ou une douleur inhabituelle en cours de traitement ou peu de temps après.<p class="answer-note">Réservé aux adultes. Ne doit pas être utilisé chez la femme enceinte ou allaitante. Demandez conseil à votre médecin.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA / TROUVER UN CENTRE ===================== -->
+    <section id="praticien" class="cta" aria-labelledby="cta-title">
+      <div class="section-shell cta-grid">
+        <div class="cta-copy">
+          <h2 class="section-title" id="cta-title">Votre parcours commence par <em>une conversation</em></h2>
+          <p>Un praticien esthétique qualifié vous aide à trouver le traitement BELOTERO® adapté à vos besoins, pour des résultats qui respectent votre peau et votre expression naturelle.</p>
+          <p>Localisez facilement un cabinet ou une clinique près de chez vous.</p>
+          <div class="cta-search-row">
+            <input id="loc-search" type="text" placeholder="Code postal ou ville" aria-label="Code postal ou ville">
+            <button class="btn cta-search-btn" type="button">Rechercher</button>
+          </div>
+          <p class="cta-note">Pour toute information sur BELOTERO® : infomed.ax@merz.com</p>
+          <div id="locator-results" hidden>
+            <p id="locator-count"></p>
+            <ul id="locator-list"></ul>
+          </div>
+        </div>
+
+        <div class="cta-map">
+          <div id="locator-map" role="application" aria-label="Carte des centres BELOTERO®"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RÉFÉRENCES ===================== -->
+  <section class="references-section" aria-labelledby="references-title">
+    <div class="section-shell references-inner">
+      <h2 id="references-title">Références</h2>
+      <ol>
+        <li>Casabona G, Davidovic K, Borrelli MR. Tissue-Plane Adaptability in Hyaluronic Acid Gels of Five Crosslinking Technologies: A Comparative Ex Vivo Ultrasound Analysis. Dermatol Surg. 2026;00:1-7.</li>
+        <li>Kühne U, et al. Safety and performance of cohesive polydensified matrix hyaluronic acid fillers with lidocaine in the clinical setting: an open-label, multicenter study. Clin Cosmet Investig Dermatol. 2016;9:373-381.</li>
+        <li>Van Loghem J, et al. Consensus on the Use of Hyaluronic Acid Fillers from the Cohesive Polydensified Matrix Range: Best Practice in Specific Facial Indications. Clin Cosmet Investig Dermatol. 2021;14:1175-1199.</li>
+        <li>BELOTERO® Balance Lidocaïne. Notice d'utilisation (IFU).</li>
+        <li>BELOTERO® Intense Lidocaïne. Notice d'utilisation (IFU).</li>
+        <li>BELOTERO® Soft Lidocaïne. Notice d'utilisation (IFU).</li>
+        <li>BELOTERO® Volume Lidocaïne. Notice d'utilisation (IFU).</li>
+        <li>BELOTERO® Revive. Notice d'utilisation (IFU).</li>
+        <li>Brevet WO 2005/085329 « Biocompatible crosslinked gel ».</li>
+        <li>Borrelli MR, Mehta H. Biomimicry: Why it Matters for Dermal Fillers. Modern Aesthetics. 2025 May 29.</li>
+        <li>Suwanchinda A, et al. See, Touch, Feel, and Express: Achieving Safe and Natural Outcomes With HA Fillers. An International Consensus. J Cosmet Dermatol. 2026;25:e70784.</li>
+        <li>Merz Aesthetics. Data on file. Literature search. Décembre 2025.</li>
+        <li>Merz Aesthetics. Data on file. 2026.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== MENTIONS ===================== -->
+  <section class="legal-section" aria-label="Informations légales BELOTERO">
+    <div class="section-shell legal-inner">
+      <p>CPM® : Matrice Cohésive Polydensifiée (Cohesive Polydensified Matrix), technologie propriétaire à l'origine du comportement biomimétique de la gamme BELOTERO®.<sup>1,9</sup></p>
+      <p>Les résultats individuels peuvent varier et dépendent du produit utilisé. En cas de discordance entre le résultat et votre état de santé actuel, contactez votre médecin. Pour plus d'informations, lire les notices en vigueur.</p>
+      <p>Les implants injectables de la gamme BELOTERO® sont destinés à être injectés dans la peau par un professionnel de santé qualifié.</p>
+      <p><strong>Indications :</strong></p>
+      <p><strong class="indic indic-rev">BELOTERO® Revive</strong> est un produit injectable et résorbable indiqué pour la revitalisation de la peau du visage au niveau des joues altérée précocement par le soleil ; une telle peau est caractérisée par une déshydratation, la perte d'élasticité et de fermeté et par la présence de ridules superficielles.</p>
+      <p><strong class="indic indic-sof">BELOTERO® Soft</strong> Lidocaïne est un implant injectable et biodégradable indiqué pour injection dans le derme superficiel à moyen pour le traitement des ridules péribuccales.</p>
+      <p><strong class="indic indic-bal">BELOTERO® Balance</strong> Lidocaïne est un implant injectable et biodégradable indiqué pour injection dans le derme superficiel à moyen pour le traitement des sillons nasogéniens, des plis d'amertume, des rides péribuccales, des rides horizontales du front et des commissures buccales. BELOTERO® Balance Lidocaïne est indiqué en injection sous-cutanée ou sous-muqueuse pour l'augmentation du volume des lèvres. BELOTERO® Balance Lidocaïne est indiqué pour injection dans le plan suprapériosté pour l'amélioration de l'apparence du creux infra-orbitaire, y compris dans la vallée des larmes.</p>
+      <p><strong class="indic indic-int">BELOTERO® Intense</strong> Lidocaïne est un implant injectable et biodégradable indiqué pour injection dans le derme profond pour le traitement des sillons nasogéniens et des plis d'amertume. BELOTERO® Intense Lidocaïne est indiqué en injection sous-cutanée ou sous-muqueuse pour l'augmentation du volume des lèvres.</p>
+      <p><strong class="indic indic-vol">BELOTERO® Volume</strong> Lidocaïne est un implant injectable et biodégradable indiqué pour l'augmentation du volume des joues, des tempes, du menton, ou pour traiter des sillons nasogéniens sévères.</p>
+      <p>La présence de la lidocaïne permet de réduire localement la douleur associée à l'injection du gel et d'améliorer le confort du patient.</p>
+      <p>Dispositifs de classe III marqués CE conformément à la réglementation en vigueur. Produits non pris en charge par les organismes d'assurance maladie. Lire attentivement la notice avant utilisation. Demandez conseil à votre médecin.</p>
+      <p>Le traitement par produit de comblement peut nécessiter plusieurs retouches dans le temps pour atteindre le résultat souhaité. Il doit être administré uniquement par des professionnels de santé correctement formés. Publication à destination des patients. Les résultats individuels peuvent varier ; demandez conseil à votre médecin expert en esthétique.</p>
+      <p>Mandataire : Merz Aesthetics GmbH – Frankfurt/Main – Allemagne</p>
+      <p>Fabricant : ANTEIS S.A. – 1 chemin des Aulx – 1228 Plan-les-Ouates – Genève/Suisse</p>
+      <p>Distributeur : Merz Aesthetics France – 2 avenue Gambetta – 92400 Courbevoie – Tél : 01 89 31 23 50. Pour toute question sur BELOTERO® : infomed.ax@merz.com</p>
+      <p>Pour toute déclaration d'effet indésirable : vigilances.ax@merz.com ou https://signalement.social-sante.gouv.fr</p>
+      <p>© 2026 Merz Aesthetics France. Tous droits réservés. MERZ AESTHETICS et BELOTERO sont des marques de commerce et/ou des marques déposées de Merz Pharma GmbH &amp; Co. KGaA.</p>
+      <p class="legal-code">PUB-BEL-2026088 – Septembre 2026 – 26/09/MerzAesthe/GP/003</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="section-shell footer-shell">
+      <nav class="footer-links" aria-label="Liens légaux">
+        <a href="https://merzaesthetics.fr/politique-de-confidentialite/">Politique de confidentialité</a>
+        <a href="https://merzaesthetics.fr/mentions-legales/">Mentions légales</a>
+        <a href="https://merzaesthetics.fr/conditions-generales-dutilisation/">Conditions générales d'utilisation</a>
+        <a href="https://merzaesthetics.fr/politique-de-gestion-des-cookies/">Politique de gestion des cookies</a>
+        <a href="#praticien">Contact</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <img src="<?php echo esc_url( BELOTERO_URL ); ?>assets/img/brand/logo-merz-aesthetics.png" alt="Merz Aesthetics">
+        </div>
+        <p>Copyright © 2026 Merz Aesthetics France. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="<?php echo esc_url( BELOTERO_URL ); ?>assets/vendor/leaflet/leaflet.min.js"></script>
+  <script src="<?php echo esc_url( BELOTERO_URL ); ?>assets/belotero.js"></script>
+<?php wp_footer(); ?>
+</body>
+</html>

@@ -1,3 +1,4 @@
-name,name2,streetNumber,street,zip,city,region,country,lat,lng
-Dr Martin Sophie,Cabinet médical,12,Rue de Ponthieu,75008,Paris,Paris,France,,
-Clinique Esthétique Bellecour,,48,Rue de la République,69002,Lyon,Rhone,France,45.760000,4.832000
+Sold-To Name,Adresse,CP,Ville
+Dr Martin Sophie,12 RUE DE PONTHIEU,75008,Paris
+Clinique Esthétique Bellecour,48 RUE DE LA REPUBLIQUE,69002,Lyon
+Cabinet du Lac,6 BIS AVENUE D'ALBIGNY,74000,Annecy
