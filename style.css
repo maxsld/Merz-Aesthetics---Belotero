@@ -1424,6 +1424,11 @@ main section[id],
   text-transform: uppercase; cursor: pointer;
 }
 .locator-action-primary { border-color: var(--orange); background: var(--orange); color: #fff; }
+/* Dans la bulle de la carte le bouton est un lien : Leaflet impose sa couleur
+   de lien (.leaflet-container a, plus spécifique), le texte sortait en bleu. */
+.leaflet-container a.locator-action-primary,
+.leaflet-container a.locator-action-primary:hover,
+.leaflet-container a.locator-action-primary:focus { color: #fff; }
 .locator-popup { min-width: 210px; font-family: "Aeonik Pro", sans-serif; }
 .locator-popup-title { margin: 0 0 3px; color: var(--ink); font-size: 14px; font-weight: 700; }
 .locator-popup-sub { margin: 0 0 5px; color: var(--ink-faint); font-size: 12px; }

@@ -1415,6 +1415,10 @@ main section[id],
   text-transform: uppercase !important; cursor: pointer !important;
 }
 .locator-action-primary { border-color: var(--orange) !important; background: var(--orange) !important; color: #fff !important; }
+
+.leaflet-container a.locator-action-primary,
+.leaflet-container a.locator-action-primary:hover,
+.leaflet-container a.locator-action-primary:focus { color: #fff !important; }
 .locator-popup { min-width: 210px !important; font-family: "Aeonik Pro", sans-serif !important; }
 .locator-popup-title { margin: 0 0 3px !important; color: var(--ink) !important; font-size: 14px !important; font-weight: 700 !important; }
 .locator-popup-sub { margin: 0 0 5px !important; color: var(--ink-faint) !important; font-size: 12px !important; }
