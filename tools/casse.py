@@ -6,10 +6,13 @@ SMALL = {"de", "du", "des", "la", "le", "les", "et", "sur", "sous", "en", "aux",
 ROAD = re.compile(r"^[A-Za-z]{1,3}\d+[A-Za-z]?$")  # RN7, RD81, A6
 # Sigles d'adresse conservés en capitales : routes et zones d'activité
 ACRONYMS = {"RD", "RN", "CD", "VC", "ZA", "ZI", "ZAC", "ZAE"}
+# Chiffres romains (Édouard VII, Louis XIV) : au moins deux lettres, pour ne
+# pas confondre avec une initiale isolée.
+ROMAN = re.compile(r"^(?=[IVX]{2,}$)X{0,3}(?:IX|IV|V?I{0,3})$", re.I)
 
 
 def _word(w, first):
-    if ROAD.match(w) or w.upper() in ACRONYMS:
+    if ROAD.match(w) or w.upper() in ACRONYMS or ROMAN.match(w):
         return w.upper()
     if "'" in w or "’" in w:
         apos = "'" if "'" in w else "’"
@@ -24,7 +27,8 @@ def _word(w, first):
 
 def titlecase(s):
     """Casse normale, seulement si la chaîne est entièrement en capitales."""
-    s = re.sub(r"\s+", " ", (s or "")).strip()
+    # « BIARRITZ. » : ponctuation parasite en fin de champ dans le fichier Merz
+    s = re.sub(r"\s+", " ", (s or "")).strip().rstrip(".,;:").strip()
     if not s or re.search(r"[a-zà-ÿ]", s):
         return s
     out, first = [], True

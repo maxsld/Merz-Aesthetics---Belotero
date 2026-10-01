@@ -296,7 +296,8 @@ function belotero_read_csv( $filepath ) {
  * Mêmes règles que tools/casse.py, qui produit la liste fournie avec le plugin.
  */
 function belotero_titlecase( $s ) {
-	$s = trim( preg_replace( '/\s+/u', ' ', (string) $s ) );
+	// « BIARRITZ. » : ponctuation parasite en fin de champ dans le fichier Merz
+	$s = trim( rtrim( trim( preg_replace( '/\s+/u', ' ', (string) $s ) ), '.,;:' ) );
 	if ( $s === '' || preg_match( '/[a-zà-ÿ]/u', $s ) ) return $s;
 
 	$small    = [ 'de', 'du', 'des', 'la', 'le', 'les', 'et', 'sur', 'sous', 'en', 'aux', 'au', 'a', 'd', 'l' ];
@@ -306,7 +307,8 @@ function belotero_titlecase( $s ) {
 	$out      = '';
 	foreach ( preg_split( '/(\s+|-)/u', $s, -1, PREG_SPLIT_DELIM_CAPTURE ) as $tok ) {
 		if ( trim( $tok ) === '' || $tok === '-' ) { $out .= $tok; continue; }
-		if ( preg_match( '/^[A-Za-z]{1,3}\d+[A-Za-z]?$/', $tok ) || in_array( mb_strtoupper( $tok ), $acronyms, true ) ) {
+		$roman = preg_match( '/^(?=[IVX]{2,}$)X{0,3}(?:IX|IV|V?I{0,3})$/i', $tok ); // Édouard VII, Louis XIV
+		if ( preg_match( '/^[A-Za-z]{1,3}\d+[A-Za-z]?$/', $tok ) || in_array( mb_strtoupper( $tok ), $acronyms, true ) || $roman ) {
 			$out .= mb_strtoupper( $tok );
 		} elseif ( preg_match( "/^(.*?)(['’])(.*)$/u", $tok, $m ) ) {
 			$out .= ( $first ? $cap( $m[1] ) : mb_strtolower( $m[1] ) ) . $m[2] . $cap( $m[3] );
